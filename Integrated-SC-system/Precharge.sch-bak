@@ -1,0 +1,1302 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 27 27
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 9700 4050 0    50   ~ 0
+CHARGE_INP
+Text Label 9700 4350 0    50   ~ 0
+CHARGE_INN
+Text HLabel 15200 4050 2    50   Input ~ 0
+SC_BANK+
+Text HLabel 15200 4350 2    50   Input ~ 0
+SC_BANK-
+Text Notes 10850 3600 0    50   ~ 0
+Leakage from Supercaps and balancing is about 42mA. \nThis will be the continuous maintenance current. \nBalancing resistor = 1.5mohm per 2 supercaps.\nLeakage current supercaps = 0.75mA per supercap\nBalancing IC bypasses roughly 2mA per supercap at 2.7V\nResister should be 30V/42mA = 714 ohm
+Text Label 9700 1800 0    50   ~ 0
+LOAD_INP
+Text Label 9700 2100 0    50   ~ 0
+LOAD_INN
+$Comp
+L Device:R R?
+U 1 1 602E04F1
+P 2100 5600
+AR Path="/601A7632/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601AF701/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601C460E/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601C5548/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601C64AC/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601D1B61/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601D6BE8/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601D6BEC/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601D80B7/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601D80BB/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBBC/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBC0/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBC8/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBCC/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBD4/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601DDBD8/602E04F1" Ref="R?"  Part="1" 
+AR Path="/601838AF/602E04F1" Ref="R122"  Part="1" 
+F 0 "R122" V 2307 5600 50  0000 C CNN
+F 1 "rc" V 2216 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2030 5600 50  0001 C CNN
+F 3 "~" H 2100 5600 50  0001 C CNN
+F 4 "71-RCS120651R0FKEA" H 2100 5600 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/Vishay-Dale/RCS120651R0FKEA/?qs=sGAEpiMZZMtlubZbdhIBIAcEJNXlkx9JboqfUnXThwU%3D" H 2100 5600 50  0001 C CNN "Mouser Price/Stock"
+	1    2100 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 5600 1850 5600
+Wire Wire Line
+	2250 5600 2350 5600
+Wire Wire Line
+	2350 5900 2350 5600
+Connection ~ 2350 5600
+Text GLabel 5800 6050 2    50   Input ~ 0
+6V_ISO
+$Comp
+L Device:R R129
+U 1 1 60384785
+P 6850 6850
+F 0 "R129" V 7057 6850 50  0000 C CNN
+F 1 "R" V 6966 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6780 6850 50  0001 C CNN
+F 3 "~" H 6850 6850 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6850 6850 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6850 6850 50  0001 C CNN "Mouser Price/Stock"
+	1    6850 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 6850 6300 6850
+Text Notes 900  5900 0    50   ~ 0
+Sets the precharge active. \nIs reset by microkontroller. RC-filter\n
+$Comp
+L Device:R R127
+U 1 1 603D5440
+P 6550 6550
+F 0 "R127" V 6757 6550 50  0000 C CNN
+F 1 "R" V 6666 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6480 6550 50  0001 C CNN
+F 3 "~" H 6550 6550 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6550 6550 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6550 6550 50  0001 C CNN "Mouser Price/Stock"
+	1    6550 6550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 6550 7500 6550
+Wire Wire Line
+	7500 6550 7500 6850
+Wire Wire Line
+	6800 6550 6700 6550
+Wire Wire Line
+	6400 6550 6300 6550
+Wire Wire Line
+	6300 6550 6300 6850
+Connection ~ 6300 6850
+Wire Wire Line
+	6300 6850 6700 6850
+Wire Notes Line
+	4600 6350 4450 6350
+Text Notes 4350 6300 0    50   ~ 0
+Isolation
+$Comp
+L Device:R R?
+U 1 1 604B4AFA
+P 2200 7700
+AR Path="/601A7632/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601AF701/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601C460E/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601C5548/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601C64AC/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601D1B61/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601D6BE8/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601D6BEC/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601D80B7/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601D80BB/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBBC/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBC0/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBC8/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBCC/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBD4/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601DDBD8/604B4AFA" Ref="R?"  Part="1" 
+AR Path="/601838AF/604B4AFA" Ref="R123"  Part="1" 
+F 0 "R123" V 2407 7700 50  0000 C CNN
+F 1 "rc" V 2316 7700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2130 7700 50  0001 C CNN
+F 3 "~" H 2200 7700 50  0001 C CNN
+F 4 "71-RCS120651R0FKEA" H 2200 7700 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/Vishay-Dale/RCS120651R0FKEA/?qs=sGAEpiMZZMtlubZbdhIBIAcEJNXlkx9JboqfUnXThwU%3D" H 2200 7700 50  0001 C CNN "Mouser Price/Stock"
+	1    2200 7700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 604B4B00
+P 2450 8150
+AR Path="/601A7632/604B4B00" Ref="C?"  Part="1" 
+AR Path="/6038F707/604B4B00" Ref="C?"  Part="1" 
+AR Path="/601838AF/604B4B00" Ref="C79"  Part="1" 
+F 0 "C79" H 2565 8196 50  0000 L CNN
+F 1 "0.1u" H 2565 8105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2488 8000 50  0001 C CNN
+F 3 "~" H 2450 8150 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 2450 8150 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 2450 8150 50  0001 C CNN "Mouser Price/Stock"
+	1    2450 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7700 2000 7700
+Wire Wire Line
+	2350 7700 2450 7700
+Wire Wire Line
+	2450 8000 2450 7700
+Connection ~ 2450 7700
+Wire Wire Line
+	3100 7800 3100 7100
+Connection ~ 3100 7800
+Wire Wire Line
+	2450 8300 2450 8400
+$Comp
+L Device:C C?
+U 1 1 604B4B13
+P 3100 8150
+AR Path="/601A7632/604B4B13" Ref="C?"  Part="1" 
+AR Path="/6038F707/604B4B13" Ref="C?"  Part="1" 
+AR Path="/601838AF/604B4B13" Ref="C81"  Part="1" 
+F 0 "C81" H 3215 8196 50  0000 L CNN
+F 1 "0.1u" H 3215 8105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3138 8000 50  0001 C CNN
+F 3 "~" H 3100 8150 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 3100 8150 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 3100 8150 50  0001 C CNN "Mouser Price/Stock"
+	1    3100 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 8400 3100 8400
+Wire Wire Line
+	3100 8300 3100 8400
+Connection ~ 3100 8400
+Wire Wire Line
+	3100 8500 3100 8400
+Wire Wire Line
+	5500 8300 5200 8300
+$Comp
+L Device:R R130
+U 1 1 604B4B31
+P 6850 7550
+F 0 "R130" V 7057 7550 50  0000 C CNN
+F 1 "R" V 6966 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6780 7550 50  0001 C CNN
+F 3 "~" H 6850 7550 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6850 7550 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6850 7550 50  0001 C CNN "Mouser Price/Stock"
+	1    6850 7550
+	0    -1   -1   0   
+$EndComp
+Text Notes 5450 5900 0    50   ~ 0
+6V reference, Min for VDD
+Text Notes 650  7400 0    50   ~ 0
+Charge is set high after precharge by kontroller. \nRC-filter\n
+$Comp
+L Device:R R128
+U 1 1 604B4B49
+P 6550 7250
+F 0 "R128" V 6757 7250 50  0000 C CNN
+F 1 "R" V 6666 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6480 7250 50  0001 C CNN
+F 3 "~" H 6550 7250 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6550 7250 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6550 7250 50  0001 C CNN "Mouser Price/Stock"
+	1    6550 7250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 7250 7500 7250
+Wire Wire Line
+	7500 7250 7500 7550
+Wire Wire Line
+	6800 7250 6700 7250
+Wire Wire Line
+	6400 7250 6300 7250
+Wire Wire Line
+	6300 7250 6300 7550
+Connection ~ 6300 7550
+Wire Wire Line
+	6300 7550 6700 7550
+$Comp
+L power:GND #PWR046
+U 1 1 604B4B5F
+P 3100 8500
+F 0 "#PWR046" H 3100 8250 50  0001 C CNN
+F 1 "GND" H 3105 8327 50  0000 C CNN
+F 2 "" H 3100 8500 50  0001 C CNN
+F 3 "" H 3100 8500 50  0001 C CNN
+	1    3100 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR048
+U 1 1 604B4B65
+P 5200 8500
+F 0 "#PWR048" H 5200 8250 50  0001 C CNN
+F 1 "GNDD" H 5204 8345 50  0000 C CNN
+F 2 "" H 5200 8500 50  0001 C CNN
+F 3 "" H 5200 8500 50  0001 C CNN
+	1    5200 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 8200 5500 8300
+$Comp
+L Device:C C?
+U 1 1 604B4B73
+P 5500 8050
+AR Path="/601A7632/604B4B73" Ref="C?"  Part="1" 
+AR Path="/6038F707/604B4B73" Ref="C?"  Part="1" 
+AR Path="/601838AF/604B4B73" Ref="C84"  Part="1" 
+F 0 "C84" H 5615 8096 50  0000 L CNN
+F 1 "1u" H 5615 8005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5538 7900 50  0001 C CNN
+F 3 "~" H 5500 8050 50  0001 C CNN
+F 4 "80-C1206C105J3R" H 5500 8050 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C105J3RACTU?qs=ET0bm%252B8TtG75uIhC3K7JNQ%3D%3D" H 5500 8050 50  0001 C CNN "Mouser Price/Stock"
+	1    5500 8050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1700 5600 0    50   Input ~ 0
+Charge_Active
+Wire Wire Line
+	7500 7550 7800 7550
+Connection ~ 7500 7550
+Text GLabel 7950 6850 2    50   Input ~ 0
+Charge_Gate
+Text GLabel 7900 7550 2    50   Input ~ 0
+Precharge_Gate
+Connection ~ 7500 6850
+Wire Wire Line
+	7950 6850 7800 6850
+Wire Notes Line
+	4600 8200 4600 6350
+Wire Notes Line
+	4450 8200 4600 8200
+Wire Notes Line
+	4450 6350 4450 8200
+$Comp
+L power:GND #PWR045
+U 1 1 6039EB42
+P 3100 6450
+F 0 "#PWR045" H 3100 6200 50  0001 C CNN
+F 1 "GND" H 3105 6277 50  0000 C CNN
+F 2 "" H 3100 6450 50  0001 C CNN
+F 3 "" H 3100 6450 50  0001 C CNN
+	1    3100 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6450 3100 6300
+Wire Wire Line
+	2350 6200 2350 6300
+$Comp
+L Device:C C?
+U 1 1 602EBC92
+P 2350 6050
+AR Path="/601A7632/602EBC92" Ref="C?"  Part="1" 
+AR Path="/6038F707/602EBC92" Ref="C?"  Part="1" 
+AR Path="/601838AF/602EBC92" Ref="C78"  Part="1" 
+F 0 "C78" H 2465 6096 50  0000 L CNN
+F 1 "0.1u" H 2465 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2388 5900 50  0001 C CNN
+F 3 "~" H 2350 6050 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 2350 6050 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 2350 6050 50  0001 C CNN "Mouser Price/Stock"
+	1    2350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:BSZ024N04LS6ATMA1 Q1
+U 1 1 604420CD
+P 12450 4900
+F 0 "Q1" H 12950 5165 50  0000 C CNN
+F 1 "BSZ024N04LS6ATMA1" H 12950 5074 50  0000 C CNN
+F 2 "SamacSys_Parts:BSZ024N04LS6ATMA1" H 13300 5000 50  0001 L CNN
+F 3 "https://hu.mouser.com/datasheet/2/196/Infineon-BSZ024N04LS6-DS-v02_00-EN-1840560.pdf" H 13300 4900 50  0001 L CNN
+F 4 "MOSFET TRENCH <= 40V" H 13300 4800 50  0001 L CNN "Description"
+F 5 "1.1" H 13300 4700 50  0001 L CNN "Height"
+F 6 "Infineon" H 13300 4600 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSZ024N04LS6ATMA1" H 13300 4500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "726-BSZ024N04LS6ATMA" H 13300 4400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSZ024N04LS6ATMA1/?qs=vLWxofP3U2zJ0GOeJDJ9GQ%3D%3D" H 13300 4300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BSZ024N04LS6ATMA1" H 13300 4200 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bsz024n04ls6atma1/infineon-technologies-ag" H 13300 4100 50  0001 L CNN "Arrow Price/Stock"
+	1    12450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 4900 13550 4900
+Wire Wire Line
+	13550 4900 13550 5000
+Wire Wire Line
+	13550 5000 13450 5000
+Wire Wire Line
+	13450 5100 13550 5100
+Wire Wire Line
+	13550 5100 13550 5000
+Connection ~ 13550 5000
+Wire Wire Line
+	13450 5300 13550 5300
+Wire Wire Line
+	13550 5300 13550 5100
+Connection ~ 13550 5100
+Wire Wire Line
+	12450 5300 12450 5500
+Wire Wire Line
+	12450 5500 13550 5500
+Wire Wire Line
+	13550 5500 13550 5300
+Connection ~ 13550 5300
+Wire Wire Line
+	13450 5200 13650 5200
+Wire Wire Line
+	13650 5200 13650 5650
+Wire Wire Line
+	12350 5650 12350 5100
+Wire Wire Line
+	12350 5100 12450 5100
+Wire Wire Line
+	12450 5000 12450 5100
+Connection ~ 12450 5100
+Wire Wire Line
+	12450 4900 12450 5000
+Connection ~ 12450 5000
+Wire Wire Line
+	12450 5200 11850 5200
+Connection ~ 13550 4900
+Connection ~ 12350 5100
+Wire Wire Line
+	13550 4350 13550 4900
+Wire Wire Line
+	12350 4350 12350 5100
+Text GLabel 11850 5200 0    50   Input ~ 0
+Charge_Gate
+$Comp
+L SamacSys_Parts:BSZ024N04LS6ATMA1 Q2
+U 1 1 606D100F
+P 12450 6200
+F 0 "Q2" H 12950 6465 50  0000 C CNN
+F 1 "BSZ024N04LS6ATMA1" H 12950 6374 50  0000 C CNN
+F 2 "SamacSys_Parts:BSZ024N04LS6ATMA1" H 13300 6300 50  0001 L CNN
+F 3 "https://hu.mouser.com/datasheet/2/196/Infineon-BSZ024N04LS6-DS-v02_00-EN-1840560.pdf" H 13300 6200 50  0001 L CNN
+F 4 "MOSFET TRENCH <= 40V" H 13300 6100 50  0001 L CNN "Description"
+F 5 "1.1" H 13300 6000 50  0001 L CNN "Height"
+F 6 "Infineon" H 13300 5900 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSZ024N04LS6ATMA1" H 13300 5800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "726-BSZ024N04LS6ATMA" H 13300 5700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSZ024N04LS6ATMA1/?qs=vLWxofP3U2zJ0GOeJDJ9GQ%3D%3D" H 13300 5600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BSZ024N04LS6ATMA1" H 13300 5500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bsz024n04ls6atma1/infineon-technologies-ag" H 13300 5400 50  0001 L CNN "Arrow Price/Stock"
+	1    12450 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 6200 13550 6200
+Wire Wire Line
+	13550 6200 13550 6300
+Wire Wire Line
+	13550 6300 13450 6300
+Wire Wire Line
+	13450 6400 13550 6400
+Wire Wire Line
+	13550 6400 13550 6300
+Connection ~ 13550 6300
+Wire Wire Line
+	13450 6600 13550 6600
+Wire Wire Line
+	13550 6600 13550 6400
+Connection ~ 13550 6400
+Wire Wire Line
+	12450 6600 12450 6800
+Wire Wire Line
+	12450 6800 13550 6800
+Wire Wire Line
+	13550 6800 13550 6600
+Connection ~ 13550 6600
+Wire Wire Line
+	13450 6500 13650 6500
+Wire Wire Line
+	13650 6500 13650 6950
+Wire Wire Line
+	13650 6950 12350 6950
+Wire Wire Line
+	12350 6950 12350 6400
+Wire Wire Line
+	12350 6400 12450 6400
+Wire Wire Line
+	12450 6300 12450 6400
+Connection ~ 12450 6400
+Wire Wire Line
+	12450 6200 12450 6300
+Connection ~ 12450 6300
+Wire Wire Line
+	12450 6500 11850 6500
+Connection ~ 13550 6200
+Connection ~ 12350 6400
+Wire Wire Line
+	12350 5650 12350 5850
+Text GLabel 11850 6500 0    50   Input ~ 0
+Precharge_Gate
+Connection ~ 13550 5500
+Wire Wire Line
+	12350 5650 13650 5650
+Wire Wire Line
+	13550 5500 13550 6200
+$Comp
+L Device:R R131
+U 1 1 606FBD52
+P 12350 6000
+F 0 "R131" H 12420 6046 50  0000 L CNN
+F 1 "30" H 12420 5955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2_TabPin1" V 12280 6000 50  0001 C CNN
+F 3 "https://no.mouser.com/datasheet/2/303/AP750-1-34.161-1218743.pdf" H 12350 6000 50  0001 C CNN
+F 4 "" H 12350 6000 50  0001 C CNN "Description"
+F 5 "" H 12350 6000 50  0001 C CNN "Height"
+F 6 "" H 12350 6000 50  0001 C CNN "Manufacturer_Name"
+F 7 "AP750 25R F" H 12350 6000 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "284-AP75025RF" H 12350 6000 50  0001 C CNN "Mouser Part Number"
+F 9 "https://no.mouser.com/ProductDetail/ARCOL-Ohmite/AP750-25R-F?qs=W0yvOO0ixfF%252BYHve3Lifqw%3D%3D" H 12350 6000 50  0001 C CNN "Mouser Price/Stock"
+F 10 "" H 12350 6000 50  0001 C CNN "Arrow Part Number"
+F 11 "" H 12350 6000 50  0001 C CNN "Arrow Price/Stock"
+	1    12350 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 6150 12350 6400
+Text Notes 12200 6000 2    50   ~ 0
+Precharge resistor\n
+$Comp
+L SamacSys_Parts:BSZ024N04LS6ATMA1 Q3
+U 1 1 6072107A
+P 13600 2600
+F 0 "Q3" H 14100 2865 50  0000 C CNN
+F 1 "BSZ024N04LS6ATMA1" H 14100 2774 50  0000 C CNN
+F 2 "SamacSys_Parts:BSZ024N04LS6ATMA1" H 14450 2700 50  0001 L CNN
+F 3 "https://hu.mouser.com/datasheet/2/196/Infineon-BSZ024N04LS6-DS-v02_00-EN-1840560.pdf" H 14450 2600 50  0001 L CNN
+F 4 "MOSFET TRENCH <= 40V" H 14450 2500 50  0001 L CNN "Description"
+F 5 "1.1" H 14450 2400 50  0001 L CNN "Height"
+F 6 "Infineon" H 14450 2300 50  0001 L CNN "Manufacturer_Name"
+F 7 "BSZ024N04LS6ATMA1" H 14450 2200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "726-BSZ024N04LS6ATMA" H 14450 2100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSZ024N04LS6ATMA1/?qs=vLWxofP3U2zJ0GOeJDJ9GQ%3D%3D" H 14450 2000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BSZ024N04LS6ATMA1" H 14450 1900 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bsz024n04ls6atma1/infineon-technologies-ag" H 14450 1800 50  0001 L CNN "Arrow Price/Stock"
+	1    13600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 2600 14700 2600
+Wire Wire Line
+	14700 2600 14700 2700
+Wire Wire Line
+	14700 2700 14600 2700
+Wire Wire Line
+	14600 2800 14700 2800
+Wire Wire Line
+	14700 2800 14700 2700
+Connection ~ 14700 2700
+Wire Wire Line
+	14600 3000 14700 3000
+Wire Wire Line
+	14700 3000 14700 2800
+Connection ~ 14700 2800
+Wire Wire Line
+	13600 3000 13600 3200
+Wire Wire Line
+	13600 3200 14700 3200
+Wire Wire Line
+	14700 3200 14700 3000
+Connection ~ 14700 3000
+Wire Wire Line
+	14600 2900 14800 2900
+Wire Wire Line
+	14800 2900 14800 3350
+Wire Wire Line
+	14800 3350 13500 3350
+Wire Wire Line
+	13500 3350 13500 2800
+Wire Wire Line
+	13500 2800 13600 2800
+Wire Wire Line
+	13600 2700 13600 2800
+Connection ~ 13600 2800
+Wire Wire Line
+	13600 2600 13600 2700
+Connection ~ 13600 2700
+Wire Wire Line
+	13600 2900 13000 2900
+Text GLabel 13000 2900 0    50   Input ~ 0
+Load_Gate
+Connection ~ 12350 5650
+Text HLabel 2350 2450 0    50   Input ~ 0
+Load_Active
+$Comp
+L Device:R R?
+U 1 1 60880A54
+P 2750 2450
+AR Path="/601A7632/60880A54" Ref="R?"  Part="1" 
+AR Path="/601AF701/60880A54" Ref="R?"  Part="1" 
+AR Path="/601C460E/60880A54" Ref="R?"  Part="1" 
+AR Path="/601C5548/60880A54" Ref="R?"  Part="1" 
+AR Path="/601C64AC/60880A54" Ref="R?"  Part="1" 
+AR Path="/601D1B61/60880A54" Ref="R?"  Part="1" 
+AR Path="/601D6BE8/60880A54" Ref="R?"  Part="1" 
+AR Path="/601D6BEC/60880A54" Ref="R?"  Part="1" 
+AR Path="/601D80B7/60880A54" Ref="R?"  Part="1" 
+AR Path="/601D80BB/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBBC/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBC0/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBC8/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBCC/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBD4/60880A54" Ref="R?"  Part="1" 
+AR Path="/601DDBD8/60880A54" Ref="R?"  Part="1" 
+AR Path="/601838AF/60880A54" Ref="R124"  Part="1" 
+F 0 "R124" V 2957 2450 50  0000 C CNN
+F 1 "rc" V 2866 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2680 2450 50  0001 C CNN
+F 3 "~" H 2750 2450 50  0001 C CNN
+F 4 "71-RCS120651R0FKEA" H 2750 2450 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/Vishay-Dale/RCS120651R0FKEA/?qs=sGAEpiMZZMtlubZbdhIBIAcEJNXlkx9JboqfUnXThwU%3D" H 2750 2450 50  0001 C CNN "Mouser Price/Stock"
+	1    2750 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2350 2450 2450 2450
+Wire Wire Line
+	2900 2450 3000 2450
+Wire Wire Line
+	3000 2750 3000 2450
+Connection ~ 3000 2450
+Connection ~ 3650 2650
+Text GLabel 5200 1850 0    50   Input ~ 0
+6V_ISO
+Wire Wire Line
+	5050 2650 5150 2650
+Wire Wire Line
+	3400 2650 3400 2750
+Wire Wire Line
+	3400 2650 3650 2650
+$Comp
+L Device:R R126
+U 1 1 60880A73
+P 6300 2550
+F 0 "R126" V 6507 2550 50  0000 C CNN
+F 1 "R" V 6416 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6230 2550 50  0001 C CNN
+F 3 "~" H 6300 2550 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6300 2550 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6300 2550 50  0001 C CNN "Mouser Price/Stock"
+	1    6300 2550
+	0    -1   -1   0   
+$EndComp
+Text Notes 4600 1700 0    50   ~ 0
+6V reference, Min for VDD
+Wire Wire Line
+	5050 2550 5750 2550
+Text Notes 1550 2750 0    50   ~ 0
+Load signal triggered by kontroller.\n RC-filter\n
+$Comp
+L Device:R R125
+U 1 1 60880A7E
+P 6000 2250
+F 0 "R125" V 6207 2250 50  0000 C CNN
+F 1 "R" V 6116 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5930 2250 50  0001 C CNN
+F 3 "~" H 6000 2250 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 6000 2250 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 6000 2250 50  0001 C CNN "Mouser Price/Stock"
+	1    6000 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 2250 6900 2250
+Wire Wire Line
+	6900 2250 6900 2550
+Wire Wire Line
+	6250 2250 6150 2250
+Wire Wire Line
+	5850 2250 5750 2250
+Wire Wire Line
+	5750 2250 5750 2550
+Connection ~ 5750 2550
+Wire Wire Line
+	5750 2550 6150 2550
+Wire Wire Line
+	5200 1850 5500 1850
+Text GLabel 7350 2550 2    50   Input ~ 0
+Load_Gate
+Connection ~ 6900 2550
+Wire Wire Line
+	7350 2550 7200 2550
+Connection ~ 5300 2450
+Wire Wire Line
+	5300 2450 5500 2450
+Wire Wire Line
+	5050 2450 5300 2450
+Wire Notes Line
+	4500 3650 4500 2050
+Wire Notes Line
+	4350 2050 4350 3650
+$Comp
+L Device:C C?
+U 1 1 60880AA2
+P 5300 2950
+AR Path="/601A7632/60880AA2" Ref="C?"  Part="1" 
+AR Path="/6038F707/60880AA2" Ref="C?"  Part="1" 
+AR Path="/601838AF/60880AA2" Ref="C83"  Part="1" 
+F 0 "C83" H 5415 2996 50  0000 L CNN
+F 1 "1u" H 5415 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5338 2800 50  0001 C CNN
+F 3 "~" H 5300 2950 50  0001 C CNN
+F 4 "80-C1206C105J3R" H 5300 2950 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C105J3RACTU?qs=ET0bm%252B8TtG75uIhC3K7JNQ%3D%3D" H 5300 2950 50  0001 C CNN "Mouser Price/Stock"
+	1    5300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2450 5300 2800
+Wire Wire Line
+	5300 3100 5300 3200
+$Comp
+L power:GND #PWR047
+U 1 1 60880AB4
+P 3750 3300
+F 0 "#PWR047" H 3750 3050 50  0001 C CNN
+F 1 "GND" H 3755 3127 50  0000 C CNN
+F 2 "" H 3750 3300 50  0001 C CNN
+F 3 "" H 3750 3300 50  0001 C CNN
+	1    3750 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 3200
+Wire Wire Line
+	5300 3200 5150 3200
+Wire Wire Line
+	5300 3200 5600 3200
+Connection ~ 3750 3150
+Wire Wire Line
+	3750 3300 3750 3150
+Wire Wire Line
+	3400 3150 3750 3150
+Connection ~ 3400 3150
+Wire Wire Line
+	3400 3050 3400 3150
+Wire Wire Line
+	3000 3150 3400 3150
+$Comp
+L Device:C C?
+U 1 1 60880ACB
+P 3400 2900
+AR Path="/601A7632/60880ACB" Ref="C?"  Part="1" 
+AR Path="/6038F707/60880ACB" Ref="C?"  Part="1" 
+AR Path="/601838AF/60880ACB" Ref="C82"  Part="1" 
+F 0 "C82" H 3515 2946 50  0000 L CNN
+F 1 "0.1u" H 3515 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3438 2750 50  0001 C CNN
+F 3 "~" H 3400 2900 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 3400 2900 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 3400 2900 50  0001 C CNN "Mouser Price/Stock"
+	1    3400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3050 3000 3150
+$Comp
+L Device:C C?
+U 1 1 60880AD3
+P 3000 2900
+AR Path="/601A7632/60880AD3" Ref="C?"  Part="1" 
+AR Path="/6038F707/60880AD3" Ref="C?"  Part="1" 
+AR Path="/601838AF/60880AD3" Ref="C80"  Part="1" 
+F 0 "C80" H 3115 2946 50  0000 L CNN
+F 1 "0.1u" H 3115 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3038 2750 50  0001 C CNN
+F 3 "~" H 3000 2900 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 3000 2900 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 3000 2900 50  0001 C CNN "Mouser Price/Stock"
+	1    3000 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 7100 0    50   Input ~ 0
+3.3V
+Text Notes 11800 3900 0    50   ~ 0
+Mosfets placed after Load and SC bank to achieve V_g >=V_s + V_th. \nThe gate to source voltage must be greater then the threshold-voltage.
+Wire Wire Line
+	15100 1800 15100 4050
+Connection ~ 15100 4050
+Wire Wire Line
+	15100 4050 15200 4050
+Wire Wire Line
+	14800 3350 14800 4350
+Connection ~ 14800 3350
+Connection ~ 14800 4350
+Wire Wire Line
+	14800 4350 15200 4350
+Wire Wire Line
+	13250 2100 13250 3200
+Wire Wire Line
+	13250 3200 13600 3200
+Connection ~ 13600 3200
+$Comp
+L SamacSys_Parts_vegard:5019 TP23
+U 1 1 603BB4B6
+P 2000 7550
+AR Path="/601838AF/603BB4B6" Ref="TP23"  Part="1" 
+AR Path="/601950CF/603BB4B6" Ref="TP?"  Part="1" 
+F 0 "TP23" V 2046 7638 50  0000 L CNN
+F 1 "5019" V 2137 7638 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 2650 7650 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 2650 7550 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 2650 7450 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 2650 7250 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 2650 7150 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 2650 7050 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 2650 6950 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 2650 6850 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 2650 6750 50  0001 L CNN "Arrow Price/Stock"
+	1    2000 7550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 7550 2000 7700
+Connection ~ 2000 7700
+Wire Wire Line
+	2000 7700 2050 7700
+$Comp
+L SamacSys_Parts_vegard:5019 TP22
+U 1 1 603F0F7B
+P 1850 5450
+AR Path="/601838AF/603F0F7B" Ref="TP22"  Part="1" 
+AR Path="/601950CF/603F0F7B" Ref="TP?"  Part="1" 
+F 0 "TP22" V 1896 5538 50  0000 L CNN
+F 1 "5019" V 1987 5538 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 2500 5550 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 2500 5450 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 2500 5350 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 2500 5150 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 2500 5050 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 2500 4950 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 2500 4850 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 2500 4750 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 2500 4650 50  0001 L CNN "Arrow Price/Stock"
+	1    1850 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 5450 1850 5600
+$Comp
+L SamacSys_Parts_vegard:5019 TP24
+U 1 1 603FEFC5
+P 2450 2300
+AR Path="/601838AF/603FEFC5" Ref="TP24"  Part="1" 
+AR Path="/601950CF/603FEFC5" Ref="TP?"  Part="1" 
+F 0 "TP24" V 2496 2388 50  0000 L CNN
+F 1 "5019" V 2587 2388 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 3100 2400 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 3100 2300 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 3100 2200 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 3100 2000 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 3100 1900 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 3100 1800 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 3100 1700 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 3100 1600 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 3100 1500 50  0001 L CNN "Arrow Price/Stock"
+	1    2450 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 2300 2450 2450
+Connection ~ 2450 2450
+Wire Wire Line
+	2450 2450 2600 2450
+Connection ~ 1850 5600
+Wire Wire Line
+	1850 5600 1950 5600
+$Comp
+L SamacSys_Parts_vegard:5019 TP26
+U 1 1 6040D20B
+P 7800 6700
+AR Path="/601838AF/6040D20B" Ref="TP26"  Part="1" 
+AR Path="/601950CF/6040D20B" Ref="TP?"  Part="1" 
+F 0 "TP26" V 7846 6788 50  0000 L CNN
+F 1 "5019" V 7937 6788 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 8450 6800 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 8450 6700 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 8450 6600 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 8450 6400 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 8450 6300 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 8450 6200 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 8450 6100 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 8450 6000 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 8450 5900 50  0001 L CNN "Arrow Price/Stock"
+	1    7800 6700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 6700 7800 6850
+Connection ~ 7800 6850
+Wire Wire Line
+	7800 6850 7500 6850
+$Comp
+L SamacSys_Parts_vegard:5019 TP27
+U 1 1 6041BBEA
+P 7800 7400
+AR Path="/601838AF/6041BBEA" Ref="TP27"  Part="1" 
+AR Path="/601950CF/6041BBEA" Ref="TP?"  Part="1" 
+F 0 "TP27" V 7846 7488 50  0000 L CNN
+F 1 "5019" V 7937 7488 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 8450 7500 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 8450 7400 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 8450 7300 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 8450 7100 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 8450 7000 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 8450 6900 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 8450 6800 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 8450 6700 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 8450 6600 50  0001 L CNN "Arrow Price/Stock"
+	1    7800 7400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 7400 7800 7550
+Connection ~ 7800 7550
+Wire Wire Line
+	7800 7550 7900 7550
+$Comp
+L SamacSys_Parts_vegard:5019 TP25
+U 1 1 6042ACC0
+P 7200 2400
+AR Path="/601838AF/6042ACC0" Ref="TP25"  Part="1" 
+AR Path="/601950CF/6042ACC0" Ref="TP?"  Part="1" 
+F 0 "TP25" V 7246 2488 50  0000 L CNN
+F 1 "5019" V 7337 2488 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 7850 2500 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 7850 2400 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 7850 2300 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 7850 2100 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 7850 2000 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 7850 1900 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 7850 1800 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 7850 1700 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 7850 1600 50  0001 L CNN "Arrow Price/Stock"
+	1    7200 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 2400 7200 2550
+Connection ~ 7200 2550
+Wire Wire Line
+	7200 2550 6900 2550
+Text HLabel 1800 7700 0    50   Input ~ 0
+Precharge_Active
+$Comp
+L SamacSys_Parts:1717017 J4
+U 1 1 603FFCB4
+P 9300 4050
+F 0 "J4" V 9654 4178 50  0000 L CNN
+F 1 "1717017" V 9745 4178 50  0000 L CNN
+F 2 "SelfMadeLib:1717017" H 9950 4150 50  0001 L CNN
+F 3 "https://www.phoenixcontact.com/online/portal/gb/?uri=pxc-oc-itemdetail:pid=1717017&library=gben&pcck=P&tab=1&selectedCategory=ALL" H 9950 4050 50  0001 L CNN
+F 4 "Phoenix Contact, 3 Way PCB Terminal Block" H 9950 3950 50  0001 L CNN "Description"
+F 5 "13.8" H 9950 3850 50  0001 L CNN "Height"
+F 6 "Phoenix Contact" H 9950 3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "1717017" H 9950 3650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "651-1717017" H 9950 3550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1717017/?qs=F5EMLAvA7ICZj%2FuGqj9o7A%3D%3D" H 9950 3450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9950 3350 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 9950 3250 50  0001 L CNN "Arrow Price/Stock"
+	1    9300 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:1717017 J3
+U 1 1 604007D5
+P 9250 1750
+F 0 "J3" H 9650 2015 50  0000 C CNN
+F 1 "1717017" H 9650 1924 50  0000 C CNN
+F 2 "SelfMadeLib:1717017" H 9900 1850 50  0001 L CNN
+F 3 "https://www.phoenixcontact.com/online/portal/gb/?uri=pxc-oc-itemdetail:pid=1717017&library=gben&pcck=P&tab=1&selectedCategory=ALL" H 9900 1750 50  0001 L CNN
+F 4 "Phoenix Contact, 3 Way PCB Terminal Block" H 9900 1650 50  0001 L CNN "Description"
+F 5 "13.8" H 9900 1550 50  0001 L CNN "Height"
+F 6 "Phoenix Contact" H 9900 1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "1717017" H 9900 1350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "651-1717017" H 9900 1250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1717017/?qs=F5EMLAvA7ICZj%2FuGqj9o7A%3D%3D" H 9900 1150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9900 1050 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 9900 950 50  0001 L CNN "Arrow Price/Stock"
+	1    9250 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 4050 9300 3950
+Wire Wire Line
+	9300 3950 9200 3950
+Wire Wire Line
+	9200 3950 9200 4050
+Wire Wire Line
+	9200 3950 9100 3950
+Wire Wire Line
+	9100 3950 9100 4050
+Connection ~ 9200 3950
+Wire Wire Line
+	9000 4050 9000 3950
+Wire Wire Line
+	9000 3950 8900 3950
+Wire Wire Line
+	8900 3950 8900 4050
+Wire Wire Line
+	9650 3950 9650 4050
+Connection ~ 9300 3950
+Wire Wire Line
+	8950 2550 8950 2650
+Wire Wire Line
+	8950 2650 9050 2650
+Wire Wire Line
+	9050 2650 9050 2550
+Wire Wire Line
+	9050 2650 9150 2650
+Wire Wire Line
+	9150 2650 9150 2550
+Connection ~ 9050 2650
+Wire Wire Line
+	9600 1800 9600 2750
+Wire Wire Line
+	9600 2750 9300 2750
+Wire Wire Line
+	9300 2750 9300 3850
+Wire Wire Line
+	8900 3850 8900 3950
+Connection ~ 8900 3950
+Wire Wire Line
+	9600 3150 8950 3150
+Wire Wire Line
+	9050 1750 9050 1650
+Wire Wire Line
+	9050 1650 9150 1650
+Wire Wire Line
+	9150 1650 9150 1750
+Wire Wire Line
+	9150 1650 9250 1650
+Wire Wire Line
+	9250 1650 9250 1750
+Connection ~ 9150 1650
+Wire Wire Line
+	9250 1650 9650 1650
+Wire Wire Line
+	9650 1650 9650 2100
+Connection ~ 9250 1650
+NoConn ~ 9250 2550
+NoConn ~ 8850 1750
+NoConn ~ 8950 1750
+Wire Wire Line
+	7000 6850 7500 6850
+Wire Wire Line
+	6450 2550 6900 2550
+$Comp
+L power:GNDD #PWR049
+U 1 1 60880AAE
+P 5600 3300
+F 0 "#PWR049" H 5600 3050 50  0001 C CNN
+F 1 "GNDD" H 5604 3145 50  0000 C CNN
+F 2 "" H 5600 3300 50  0001 C CNN
+F 3 "" H 5600 3300 50  0001 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3300 5600 3200
+Wire Wire Line
+	5500 1850 5500 2450
+Wire Wire Line
+	7000 7550 7500 7550
+$Comp
+L power:GNDD #PWR?
+U 1 1 6052B79A
+P 14200 4600
+AR Path="/60183CAF/6052B79A" Ref="#PWR?"  Part="1" 
+AR Path="/601838AF/6052B79A" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 14200 4350 50  0001 C CNN
+F 1 "GNDD" H 14204 4445 50  0000 C CNN
+F 2 "" H 14200 4600 50  0001 C CNN
+F 3 "" H 14200 4600 50  0001 C CNN
+	1    14200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 4600 14200 4350
+Wire Wire Line
+	9650 4050 15100 4050
+Wire Wire Line
+	9650 2100 13250 2100
+Wire Wire Line
+	9600 1800 15100 1800
+Connection ~ 8950 2650
+Wire Wire Line
+	8900 3850 9300 3850
+Wire Wire Line
+	8950 3150 8950 2650
+Wire Wire Line
+	9600 3150 9600 4350
+Text Notes 7850 4150 0    50   ~ 0
+POSITIVE CONNECTOR\nFOR CHARGE AND LOAD
+Text Notes 7900 1850 0    50   ~ 0
+NEGATIVE CONNECTOR\nFOR CHARGE AND LOAD
+Wire Wire Line
+	9000 4850 9100 4850
+Wire Wire Line
+	9200 4850 9100 4850
+Connection ~ 9100 4850
+Connection ~ 9200 4850
+Wire Wire Line
+	9200 4850 9300 4850
+Wire Wire Line
+	8750 3950 8750 4850
+Wire Wire Line
+	9300 3950 9650 3950
+Wire Wire Line
+	8750 3950 8900 3950
+Wire Wire Line
+	8750 4850 9000 4850
+Connection ~ 9000 4850
+Text GLabel 3650 1850 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	13550 4350 14200 4350
+Wire Wire Line
+	9600 4350 12350 4350
+Connection ~ 14200 4350
+Wire Wire Line
+	14200 4350 14800 4350
+$Comp
+L SamacSys_Parts:UCC21220AD IC39
+U 1 1 6050E88D
+P 3900 6950
+F 0 "IC39" H 4500 7215 50  0000 C CNN
+F 1 "UCC21220AD" H 4500 7124 50  0000 C CNN
+F 2 "SamacSys_Parts:SOIC127P600X175-16N" H 4950 7050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/UCC21220A" H 4950 6950 50  0001 L CNN
+F 4 "4-A, 6-A, 3.0-kVRMS Isolated Dual-Channel Gate Driver" H 4950 6850 50  0001 L CNN "Description"
+F 5 "1.75" H 4950 6750 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4950 6650 50  0001 L CNN "Manufacturer_Name"
+F 7 "UCC21220AD" H 4950 6550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-UCC21220AD" H 4950 6450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/UCC21220AD?qs=qSfuJ%252Bfl%2Fd6MGQx3F2Zl1A%3D%3D" H 4950 6350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "UCC21220AD" H 4950 6250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ucc21220ad/texas-instruments" H 4950 6150 50  0001 L CNN "Arrow Price/Stock"
+	1    3900 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7700 3300 7050
+Wire Wire Line
+	3300 7050 3900 7050
+Wire Wire Line
+	2450 7700 3300 7700
+Wire Wire Line
+	3400 7800 3400 7650
+Wire Wire Line
+	3400 7150 3900 7150
+Wire Wire Line
+	3100 7800 3400 7800
+Connection ~ 3400 7650
+Wire Wire Line
+	3400 7650 3400 7150
+Wire Wire Line
+	3400 7650 3900 7650
+Wire Wire Line
+	3900 7250 3500 7250
+Wire Wire Line
+	3500 7250 3500 8400
+Wire Wire Line
+	3500 8400 3100 8400
+Wire Wire Line
+	3100 7800 3100 8000
+NoConn ~ 3900 7550
+NoConn ~ 3900 7450
+NoConn ~ 3900 7350
+Wire Wire Line
+	5100 7650 5200 7650
+Wire Wire Line
+	5200 7650 5200 7150
+Wire Wire Line
+	5200 7150 5100 7150
+Connection ~ 5200 7650
+Wire Wire Line
+	5200 7650 5200 8300
+Connection ~ 5200 8300
+Wire Wire Line
+	5200 8300 5200 8500
+Wire Wire Line
+	2350 6300 3100 6300
+Wire Wire Line
+	3300 5600 3300 6950
+Wire Wire Line
+	3300 6950 3900 6950
+Wire Wire Line
+	2350 5600 3300 5600
+Wire Wire Line
+	5100 7450 5300 7450
+Wire Wire Line
+	5300 6050 5800 6050
+Wire Wire Line
+	5300 7450 5500 7450
+Wire Wire Line
+	5500 7450 5500 7900
+Connection ~ 5300 7450
+Wire Wire Line
+	5100 6950 5300 6950
+Wire Wire Line
+	5300 6050 5300 6950
+Connection ~ 5300 6950
+Wire Wire Line
+	5300 6950 5300 7450
+Wire Wire Line
+	5100 7050 5500 7050
+Wire Wire Line
+	5500 7050 5500 6850
+Wire Wire Line
+	5100 7550 6300 7550
+NoConn ~ 5100 7250
+NoConn ~ 5100 7350
+$Comp
+L SamacSys_Parts:UCC21220AD IC38
+U 1 1 608B2855
+P 3850 2450
+F 0 "IC38" H 4450 2715 50  0000 C CNN
+F 1 "UCC21220AD" H 4450 2624 50  0000 C CNN
+F 2 "SamacSys_Parts:SOIC127P600X175-16N" H 4900 2550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/UCC21220A" H 4900 2450 50  0001 L CNN
+F 4 "4-A, 6-A, 3.0-kVRMS Isolated Dual-Channel Gate Driver" H 4900 2350 50  0001 L CNN "Description"
+F 5 "1.75" H 4900 2250 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4900 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "UCC21220AD" H 4900 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-UCC21220AD" H 4900 1950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/UCC21220AD?qs=qSfuJ%252Bfl%2Fd6MGQx3F2Zl1A%3D%3D" H 4900 1850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "UCC21220AD" H 4900 1750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ucc21220ad/texas-instruments" H 4900 1650 50  0001 L CNN "Arrow Price/Stock"
+	1    3850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2650 5150 3200
+NoConn ~ 5050 2750
+NoConn ~ 5050 2850
+NoConn ~ 5050 2950
+NoConn ~ 5050 3050
+NoConn ~ 5050 3150
+Wire Wire Line
+	3650 1850 3650 2650
+Wire Wire Line
+	3750 2750 3750 3150
+Wire Wire Line
+	3750 2750 3850 2750
+Wire Wire Line
+	3650 2650 3850 2650
+Wire Wire Line
+	3000 2450 3850 2450
+NoConn ~ 3850 2550
+NoConn ~ 3850 2850
+NoConn ~ 3850 2950
+NoConn ~ 3850 3050
+NoConn ~ 3850 3150
+Wire Notes Line
+	4350 3650 4500 3650
+Wire Notes Line
+	4500 2050 4350 2050
+Text Notes 4250 2000 0    50   ~ 0
+Isolation
+$Comp
+L SamacSys_Parts:RS07D-HM3-08 D16
+U 1 1 60A2E061
+P 6800 6550
+F 0 "D16" H 7100 6817 50  0000 C CNN
+F 1 "RS07D-HM3-08" H 7100 6726 50  0000 C CNN
+F 2 "SamacSys_Parts:SODFL3718X108N" H 7250 6550 50  0001 L CNN
+F 3 "https://www.vishay.com/docs/85195/rs07bm.pdf" H 7250 6450 50  0001 L CNN
+F 4 "Rectifiers 1.4A 200V" H 7250 6350 50  0001 L CNN "Description"
+F 5 "1.08" H 7250 6250 50  0001 L CNN "Height"
+F 6 "Vishay" H 7250 6150 50  0001 L CNN "Manufacturer_Name"
+F 7 "RS07D-HM3-08" H 7250 6050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "78-RS07D-HM3-08" H 7250 5950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/RS07D-HM3-08?qs=7MVldsJ5UaweGTh7Nw6msg%3D%3D" H 7250 5850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7250 5750 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7250 5650 50  0001 L CNN "Arrow Price/Stock"
+	1    6800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:RS07D-HM3-08 D17
+U 1 1 60A2EC1C
+P 6800 7250
+F 0 "D17" H 7100 7517 50  0000 C CNN
+F 1 "RS07D-HM3-08" H 7100 7426 50  0000 C CNN
+F 2 "SamacSys_Parts:SODFL3718X108N" H 7250 7250 50  0001 L CNN
+F 3 "https://www.vishay.com/docs/85195/rs07bm.pdf" H 7250 7150 50  0001 L CNN
+F 4 "Rectifiers 1.4A 200V" H 7250 7050 50  0001 L CNN "Description"
+F 5 "1.08" H 7250 6950 50  0001 L CNN "Height"
+F 6 "Vishay" H 7250 6850 50  0001 L CNN "Manufacturer_Name"
+F 7 "RS07D-HM3-08" H 7250 6750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "78-RS07D-HM3-08" H 7250 6650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/RS07D-HM3-08?qs=7MVldsJ5UaweGTh7Nw6msg%3D%3D" H 7250 6550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7250 6450 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7250 6350 50  0001 L CNN "Arrow Price/Stock"
+	1    6800 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:RS07D-HM3-08 D15
+U 1 1 60A2EFD5
+P 6250 2250
+F 0 "D15" H 6550 2517 50  0000 C CNN
+F 1 "RS07D-HM3-08" H 6550 2426 50  0000 C CNN
+F 2 "SamacSys_Parts:SODFL3718X108N" H 6700 2250 50  0001 L CNN
+F 3 "https://www.vishay.com/docs/85195/rs07bm.pdf" H 6700 2150 50  0001 L CNN
+F 4 "Rectifiers 1.4A 200V" H 6700 2050 50  0001 L CNN "Description"
+F 5 "1.08" H 6700 1950 50  0001 L CNN "Height"
+F 6 "Vishay" H 6700 1850 50  0001 L CNN "Manufacturer_Name"
+F 7 "RS07D-HM3-08" H 6700 1750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "78-RS07D-HM3-08" H 6700 1650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/RS07D-HM3-08?qs=7MVldsJ5UaweGTh7Nw6msg%3D%3D" H 6700 1550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 6700 1450 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6700 1350 50  0001 L CNN "Arrow Price/Stock"
+	1    6250 2250
+	1    0    0    -1  
+$EndComp
+Text Notes 800  6700 0    50   ~ 0
+Rev. 1.1\nFixed error with charge and pre_charge signal. 
+Wire Notes Line
+	600  4950 2850 4950
+Wire Notes Line
+	2850 4950 2850 8650
+Wire Notes Line
+	2850 8650 600  8650
+Wire Notes Line
+	600  8650 600  4950
+Text Notes 11800 10350 0    50   ~ 0
+Rev. 1.1\nFixed error with charge and pre_charge signal. 
+Text Notes 11800 10150 0    50   ~ 0
+Rev. 1.0\nFinished design and ordered.
+$EndSCHEMATC

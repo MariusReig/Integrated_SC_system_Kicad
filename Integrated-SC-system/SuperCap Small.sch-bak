@@ -1,0 +1,622 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 27
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 12100 800  550  350 
+U 60127F14
+F0 "Active_Balancing_1" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 850 50 
+F3 "Vmid" I L 12100 950 50 
+F4 "V-" I L 12100 1050 50 
+$EndSheet
+$Sheet
+S 12100 1350 550  350 
+U 60183D66
+F0 "Active_Balancing_2" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 1400 50 
+F3 "Vmid" I L 12100 1500 50 
+F4 "V-" I L 12100 1600 50 
+$EndSheet
+$Sheet
+S 12100 1900 550  350 
+U 6018A3E7
+F0 "Active_Balancing_3" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 1950 50 
+F3 "Vmid" I L 12100 2050 50 
+F4 "V-" I L 12100 2150 50 
+$EndSheet
+$Sheet
+S 12100 3550 550  350 
+U 601ACA25
+F0 "Active_Balancing_6" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 3600 50 
+F3 "Vmid" I L 12100 3700 50 
+F4 "V-" I L 12100 3800 50 
+$EndSheet
+$Sheet
+S 12100 3000 550  350 
+U 601B19F6
+F0 "Active_Balancing_5" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 3050 50 
+F3 "Vmid" I L 12100 3150 50 
+F4 "V-" I L 12100 3250 50 
+$EndSheet
+$Sheet
+S 12100 2450 550  350 
+U 601B304B
+F0 "Active_Balancing_4" 50
+F1 "Active_Balancing.sch" 50
+F2 "V+" I L 12100 2500 50 
+F3 "Vmid" I L 12100 2600 50 
+F4 "V-" I L 12100 2700 50 
+$EndSheet
+Wire Wire Line
+	12000 1050 12100 1050
+Wire Wire Line
+	12100 1400 12000 1400
+Wire Wire Line
+	12000 1050 12000 1250
+Connection ~ 12000 1250
+Wire Wire Line
+	12000 1250 12000 1400
+Wire Wire Line
+	12100 1600 12000 1600
+Wire Wire Line
+	12000 1600 12000 1800
+Wire Wire Line
+	12000 1950 12100 1950
+Wire Wire Line
+	12100 2150 12000 2150
+Wire Wire Line
+	12000 2150 12000 2350
+Wire Wire Line
+	12000 2500 12100 2500
+Wire Wire Line
+	12100 2700 12000 2700
+Wire Wire Line
+	12000 2700 12000 2900
+Wire Wire Line
+	12000 3050 12100 3050
+Wire Wire Line
+	12100 3250 12000 3250
+Wire Wire Line
+	12000 3600 12100 3600
+Connection ~ 12000 1800
+Wire Wire Line
+	12000 1800 12000 1950
+Connection ~ 12000 2900
+Wire Wire Line
+	12000 2900 12000 3050
+Wire Wire Line
+	12000 3250 12000 3450
+Connection ~ 12000 3450
+Wire Wire Line
+	12000 3450 12000 3600
+$Sheet
+S 1050 3750 850  400 
+U 601950CF
+F0 "Power_distribution" 50
+F1 "Power_distribution.sch" 50
+$EndSheet
+$Sheet
+S 5450 6150 950  500 
+U 601A7632
+F0 "Voltage_Measurement" 50
+F1 "Voltage_Measurement.sch" 50
+F2 "Voltage_TMB+" I L 5450 6450 50 
+F3 "Voltage_TMB-" I L 5450 6550 50 
+F4 "Voltage_Measured+" I L 5450 6200 50 
+F5 "Voltage_Measured-" I L 5450 6300 50 
+$EndSheet
+$Sheet
+S 4000 6750 800  350 
+U 6014032F
+F0 "Sheet6014032E" 50
+F1 "Current_measurement.sch" 50
+F2 "Current_Measured" I L 4000 6800 50 
+F3 "Current_TBM+" I L 4000 6900 50 
+F4 "Current_TMB-" I L 4000 7000 50 
+$EndSheet
+Wire Wire Line
+	5450 6450 5250 6450
+Wire Wire Line
+	5450 6550 5350 6550
+Wire Wire Line
+	4000 6900 3800 6900
+Wire Wire Line
+	3800 6900 3800 7550
+Wire Wire Line
+	4000 7000 3900 7000
+Wire Wire Line
+	3900 7000 3900 7550
+Wire Wire Line
+	4000 6800 1850 6800
+Wire Wire Line
+	5450 6200 1850 6200
+Wire Wire Line
+	5350 6550 5350 7750
+Wire Wire Line
+	5250 6450 5250 7550
+Wire Wire Line
+	11550 3800 12100 3800
+Wire Wire Line
+	11550 3700 12100 3700
+Wire Wire Line
+	11550 3450 12000 3450
+Wire Wire Line
+	11550 3150 12100 3150
+Wire Wire Line
+	11550 2900 12000 2900
+Wire Wire Line
+	11550 2600 12100 2600
+Wire Wire Line
+	11550 2050 12100 2050
+Wire Wire Line
+	11550 1800 12000 1800
+Wire Wire Line
+	11550 1500 12100 1500
+Wire Wire Line
+	11550 1250 12000 1250
+Wire Wire Line
+	11550 950  12100 950 
+Wire Wire Line
+	12100 850  11550 850 
+Wire Wire Line
+	3900 7550 5250 7550
+$Sheet
+S 10350 800  1200 7150
+U 60183CAF
+F0 "Supercaps" 50
+F1 "SuperCaps.sch" 50
+F2 "V1+" I R 11550 850 50 
+F3 "V1-_V2+" I R 11550 950 50 
+F4 "V2-_V3+" I R 11550 1250 50 
+F5 "V3-_V4+" I R 11550 1500 50 
+F6 "V4-_V5+" I R 11550 1800 50 
+F7 "V5-_V6+" I R 11550 2050 50 
+F8 "V6-_V7+" I R 11550 2350 50 
+F9 "V7-_V8+" I R 11550 2600 50 
+F10 "V8-_V9+" I R 11550 2900 50 
+F11 "V9-_V10+" I R 11550 3150 50 
+F12 "V10-_V11+" I R 11550 3450 50 
+F13 "V11-_V12+" I R 11550 3700 50 
+F14 "V12-" I R 11550 3800 50 
+F15 "OVP_V1+" I L 10350 900 50 
+F16 "OVP_V1-_V2+" I L 10350 1000 50 
+F17 "OVP_V2-_V3+" I L 10350 1400 50 
+F18 "OVP_V3-_V4+" I L 10350 1800 50 
+F19 "OVP_V4-_V5+" I L 10350 2200 50 
+F20 "OVP_V5-_V6+" I L 10350 2600 50 
+F21 "OVP_V6-_V7+" I L 10350 3000 50 
+F22 "OVP_V7-_V8+" I L 10350 3450 50 
+F23 "OVP_V8-_V9+" I L 10350 3850 50 
+F24 "OVP_V9-_V10+" I L 10350 4250 50 
+F25 "OVP_V10-_V11+" I L 10350 4650 50 
+F26 "OVP_V11-_V12+" I L 10350 5050 50 
+F27 "OVP_V12-" I L 10350 5450 50 
+F28 "SC_BANK+" I L 10350 7550 50 
+F29 "SC_BANK-" I L 10350 7750 50 
+$EndSheet
+Wire Wire Line
+	9600 900  10350 900 
+Wire Wire Line
+	8250 1300 10300 1300
+Wire Wire Line
+	8250 1400 10300 1400
+Wire Wire Line
+	8250 2200 10300 2200
+Wire Wire Line
+	9600 2500 10300 2500
+Wire Wire Line
+	9600 2600 10300 2600
+Wire Wire Line
+	8250 2900 10300 2900
+Wire Wire Line
+	8250 3000 10300 3000
+Wire Wire Line
+	9600 3350 10300 3350
+Wire Wire Line
+	9600 3450 10300 3450
+Wire Wire Line
+	8250 3750 10300 3750
+Wire Wire Line
+	8250 3850 10300 3850
+Wire Wire Line
+	9600 4150 10300 4150
+Wire Wire Line
+	9600 4250 10300 4250
+Wire Wire Line
+	8250 4550 10300 4550
+Wire Wire Line
+	8250 4650 10300 4650
+$Sheet
+S 7050 5250 1200 400 
+U 601DDBD8
+F0 "Overvoltage_Protection_12" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 5450 50 
+F3 "Vref+" I R 8250 5350 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 5550 50 
+$EndSheet
+Wire Wire Line
+	9600 4950 10300 4950
+Wire Wire Line
+	9600 5050 10300 5050
+Wire Wire Line
+	8250 5350 10300 5350
+Wire Wire Line
+	8250 5450 10350 5450
+Connection ~ 10300 1400
+Wire Wire Line
+	10300 1400 10350 1400
+Connection ~ 5250 7550
+$Sheet
+S 8400 4850 1200 400 
+U 602C6F83
+F0 "Overvoltage_Protection_11" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 5050 50 
+F3 "Vref+" I R 9600 4950 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 5150 50 
+$EndSheet
+$Sheet
+S 7050 4450 1200 400 
+U 602C99B2
+F0 "Overvoltage_Protection_10" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 4650 50 
+F3 "Vref+" I R 8250 4550 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 4750 50 
+$EndSheet
+Wire Wire Line
+	10300 2200 10300 2500
+Connection ~ 10300 2200
+Wire Wire Line
+	10300 2200 10350 2200
+Connection ~ 10300 3000
+Wire Wire Line
+	10300 3000 10350 3000
+Wire Wire Line
+	10300 3850 10300 4150
+Connection ~ 10300 3850
+Wire Wire Line
+	10300 3850 10350 3850
+Wire Wire Line
+	10300 4650 10300 4950
+Connection ~ 10300 4650
+Wire Wire Line
+	10300 4650 10350 4650
+Wire Wire Line
+	8250 2100 10300 2100
+$Sheet
+S 8400 4050 1200 400 
+U 602EB817
+F0 "Overvoltage_Protection_9" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 4250 50 
+F3 "Vref+" I R 9600 4150 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 4350 50 
+$EndSheet
+$Sheet
+S 7050 3650 1200 400 
+U 602EEDF2
+F0 "Overvoltage_Protection_8" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 3850 50 
+F3 "Vref+" I R 8250 3750 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 3950 50 
+$EndSheet
+$Sheet
+S 7050 2800 1200 400 
+U 602F236D
+F0 "Overvoltage_Protection_6" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 3000 50 
+F3 "Vref+" I R 8250 2900 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 3100 50 
+$EndSheet
+$Sheet
+S 7050 2000 1200 400 
+U 602F58EC
+F0 "Overvoltage_Protection_4" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 2200 50 
+F3 "Vref+" I R 8250 2100 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 2300 50 
+$EndSheet
+$Sheet
+S 7050 1200 1200 400 
+U 602F8E6F
+F0 "Overvoltage_Protection_2" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 8250 1400 50 
+F3 "Vref+" I R 8250 1300 50 
+F4 "OverVoltageProtection_Alarm" I L 7050 1500 50 
+$EndSheet
+$Sheet
+S 8400 3250 1200 400 
+U 602FC492
+F0 "Overvoltage_Protection_7" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 3450 50 
+F3 "Vref+" I R 9600 3350 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 3550 50 
+$EndSheet
+$Sheet
+S 8400 2400 1200 400 
+U 602FFA39
+F0 "Overvoltage_Protection_5" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 2600 50 
+F3 "Vref+" I R 9600 2500 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 2700 50 
+$EndSheet
+$Sheet
+S 8400 800  1200 400 
+U 6030656F
+F0 "Overvoltage_Protection_1" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 1000 50 
+F3 "Vref+" I R 9600 900 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 1100 50 
+$EndSheet
+$Sheet
+S 8400 1600 1200 400 
+U 60302FB0
+F0 "Overvoltage_Protection_3" 50
+F1 "Overvoltage_Protection.sch" 50
+F2 "Vref-" I R 9600 1800 50 
+F3 "Vref+" I R 9600 1700 50 
+F4 "OverVoltageProtection_Alarm" I L 8400 1900 50 
+$EndSheet
+Wire Wire Line
+	9600 1700 10300 1700
+Wire Wire Line
+	10300 1700 10300 1400
+Wire Wire Line
+	9600 1800 10300 1800
+Wire Wire Line
+	10300 1800 10300 2100
+Connection ~ 10300 1800
+Wire Wire Line
+	10300 1800 10350 1800
+Wire Wire Line
+	10300 5050 10300 5350
+Wire Wire Line
+	10350 5050 10300 5050
+Connection ~ 10300 5050
+Wire Wire Line
+	10300 4250 10300 4550
+Wire Wire Line
+	10350 4250 10300 4250
+Connection ~ 10300 4250
+Wire Wire Line
+	10300 3450 10300 3750
+Wire Wire Line
+	10300 3450 10350 3450
+Connection ~ 10300 3450
+Wire Wire Line
+	10300 3000 10300 3350
+Wire Wire Line
+	10300 2600 10300 2900
+Wire Wire Line
+	10300 2600 10350 2600
+Connection ~ 10300 2600
+Wire Wire Line
+	9600 1000 10300 1000
+Wire Wire Line
+	10300 1000 10300 1300
+Connection ~ 10300 1000
+Wire Wire Line
+	10300 1000 10350 1000
+Wire Wire Line
+	8400 5150 7000 5150
+Wire Wire Line
+	2350 7650 1850 7650
+Wire Wire Line
+	2350 7800 1850 7800
+$Sheet
+S 2500 4400 1100 1250
+U 6038F707
+F0 "OR-GATE" 50
+F1 "OR-GATE.sch" 50
+F2 "OVP_ALARM" I L 2500 5550 50 
+F3 "IN_PORT_1" I R 3600 4450 50 
+F4 "IN_PORT_2" I R 3600 4550 50 
+F5 "IN_PORT_3" I R 3600 4650 50 
+F6 "IN_PORT_4" I R 3600 4750 50 
+F7 "IN_PORT_5" I R 3600 4850 50 
+F8 "IN_PORT_6" I R 3600 4950 50 
+F9 "IN_PORT_7" I R 3600 5050 50 
+F10 "IN_PORT_8" I R 3600 5150 50 
+F11 "IN_PORT_9" I R 3600 5250 50 
+F12 "IN_PORT_10" I R 3600 5350 50 
+F13 "IN_PORT_11" I R 3600 5450 50 
+F14 "IN_PORT_12" I R 3600 5550 50 
+$EndSheet
+Wire Wire Line
+	5950 5550 7050 5550
+Wire Wire Line
+	5950 5450 7000 5450
+Wire Wire Line
+	7000 5450 7000 5150
+Wire Wire Line
+	6950 4750 6950 5350
+Wire Wire Line
+	6950 5350 5950 5350
+Wire Wire Line
+	6950 4750 7050 4750
+Wire Wire Line
+	6900 4350 6900 5250
+Wire Wire Line
+	6900 5250 5950 5250
+Wire Wire Line
+	6900 4350 8400 4350
+Wire Wire Line
+	6850 3950 6850 5150
+Wire Wire Line
+	6850 5150 5950 5150
+Wire Wire Line
+	6850 3950 7050 3950
+Wire Wire Line
+	6800 3550 6800 5050
+Wire Wire Line
+	6800 5050 5950 5050
+Wire Wire Line
+	6800 3550 8400 3550
+Wire Wire Line
+	6750 3100 6750 4950
+Wire Wire Line
+	6750 4950 5950 4950
+Wire Wire Line
+	6750 3100 7050 3100
+Wire Wire Line
+	6700 2700 6700 4850
+Wire Wire Line
+	6700 4850 5950 4850
+Wire Wire Line
+	6700 2700 8400 2700
+Wire Wire Line
+	6650 2300 6650 4750
+Wire Wire Line
+	6650 4750 5950 4750
+Wire Wire Line
+	6650 2300 7050 2300
+Wire Wire Line
+	6600 1900 6600 4650
+Wire Wire Line
+	6600 4650 5950 4650
+Wire Wire Line
+	6600 1900 8400 1900
+Wire Wire Line
+	6550 1500 6550 4550
+Wire Wire Line
+	6550 4550 5950 4550
+Wire Wire Line
+	6550 1500 7050 1500
+Wire Wire Line
+	6500 1100 6500 4450
+Wire Wire Line
+	6500 4450 5950 4450
+Wire Wire Line
+	6500 1100 8400 1100
+Wire Wire Line
+	2500 5550 1850 5550
+Wire Wire Line
+	5250 7550 10350 7550
+Wire Wire Line
+	5350 7750 10350 7750
+$Sheet
+S 4750 4400 1200 1250
+U 6039D96C
+F0 "Isolation-IC" 50
+F1 "Isolation-IC.sch" 50
+F2 "IN_PORT_1" I R 5950 4450 50 
+F3 "IN_PORT_2" I R 5950 4550 50 
+F4 "IN_PORT_3" I R 5950 4650 50 
+F5 "IN_PORT_4" I R 5950 4750 50 
+F6 "IN_PORT_5" I R 5950 4850 50 
+F7 "IN_PORT_6" I R 5950 4950 50 
+F8 "IN_PORT_7" I R 5950 5050 50 
+F9 "IN_PORT_8" I R 5950 5150 50 
+F10 "IN_PORT_9" I R 5950 5250 50 
+F11 "IN_PORT_10" I R 5950 5350 50 
+F12 "IN_PORT_11" I R 5950 5450 50 
+F13 "IN_PORT_12" I R 5950 5550 50 
+F14 "OUT_PORT_1" O L 4750 4450 50 
+F15 "OUT_PORT_2" O L 4750 4550 50 
+F16 "OUT_PORT_3" O L 4750 4650 50 
+F17 "OUT_PORT_4" O L 4750 4750 50 
+F18 "OUT_PORT_5" O L 4750 4850 50 
+F19 "OUT_PORT_6" O L 4750 4950 50 
+F20 "OUT_PORT_8" O L 4750 5050 50 
+F21 "OUT_PORT_7" O L 4750 5150 50 
+F22 "OUT_PORT_9" O L 4750 5250 50 
+F23 "OUT_PORT_10" O L 4750 5350 50 
+F24 "OUT_PORT_11" O L 4750 5450 50 
+F25 "OUT_PORT_12" O L 4750 5550 50 
+$EndSheet
+Wire Wire Line
+	3600 4450 4750 4450
+Wire Wire Line
+	3600 4550 4750 4550
+Wire Wire Line
+	3600 4650 4750 4650
+Wire Wire Line
+	3600 4750 4750 4750
+Wire Wire Line
+	3600 4850 4750 4850
+Wire Wire Line
+	3600 4950 4750 4950
+Wire Wire Line
+	3600 5050 4750 5050
+Wire Wire Line
+	3600 5150 4750 5150
+Wire Wire Line
+	3600 5250 4750 5250
+Wire Wire Line
+	3600 5350 4750 5350
+Wire Wire Line
+	3600 5450 4750 5450
+Wire Wire Line
+	3600 5550 4750 5550
+Wire Wire Line
+	1850 7950 2350 7950
+Wire Wire Line
+	3650 7550 3800 7550
+Wire Wire Line
+	5350 7750 3650 7750
+Connection ~ 5350 7750
+$Sheet
+S 1050 4700 800  3400
+U 601DC539
+F0 "Signaling" 50
+F1 "Signaling.sch" 50
+F2 "ADCINA0_AI" I R 1850 6800 50 
+F3 "ADCINA2_AI" I R 1850 6200 50 
+F4 "ADCINA3_AI" I R 1850 6300 50 
+F5 "GPIO_P67" O R 1850 7650 50 
+F6 "GPIO_P22" O R 1850 7800 50 
+F7 "GPIO_P97" O R 1850 7950 50 
+F8 "GPIO_P52" I R 1850 5550 50 
+$EndSheet
+$Sheet
+S 2350 7500 1300 600 
+U 601838AF
+F0 "Precharge" 50
+F1 "Precharge.sch" 50
+F2 "SC_BANK+" I R 3650 7550 50 
+F3 "SC_BANK-" I R 3650 7750 50 
+F4 "Precharge_Active" I L 2350 7950 50 
+F5 "Charge_Active" I L 2350 7650 50 
+F6 "Load_Active" I L 2350 7800 50 
+$EndSheet
+Wire Wire Line
+	5450 6300 1850 6300
+Wire Wire Line
+	11550 2350 12000 2350
+Connection ~ 12000 2350
+Wire Wire Line
+	12000 2350 12000 2500
+Text Notes 11800 10350 0    50   ~ 0
+Rev. 1.1\nFixed error with charge and pre_charge signal. 
+Text Notes 11800 10150 0    50   ~ 0
+Rev. 1.0\nFinished design and ordered.
+$EndSCHEMATC

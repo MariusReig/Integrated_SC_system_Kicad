@@ -1,0 +1,314 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 15-91-0200-SamacSys_Parts
+#
+DEF 15-91-0200-SamacSys_Parts J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "15-91-0200-SamacSys_Parts" 750 200 50 H V L CNN
+F2 "15910200" 750 100 50 H I L CNN
+F3 "https://www.molex.com/pdm_docs/sd/015910200_sd.pdf" 750 0 50 H I L CNN
+F4 "Headers & Wire Housings HDR DUAL SMT 20P" 750 -100 50 H I L CNN "Description"
+F5 "9.66" 750 -200 50 H I L CNN "Height"
+F6 "Molex" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "15-91-0200" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "538-15-91-0200" 750 -700 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Molex/15-91-0200?qs=359VwiUTsp31P0d0popmig%3D%3D" 750 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -1000 200 -1000 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 10 10 900 -400 200 L 50 50 0 0 P
+X 11 11 0 -500 200 R 50 50 0 0 P
+X 12 12 900 -500 200 L 50 50 0 0 P
+X 13 13 0 -600 200 R 50 50 0 0 P
+X 14 14 900 -600 200 L 50 50 0 0 P
+X 15 15 0 -700 200 R 50 50 0 0 P
+X 16 16 900 -700 200 L 50 50 0 0 P
+X 17 17 0 -800 200 R 50 50 0 0 P
+X 18 18 900 -800 200 L 50 50 0 0 P
+X 19 19 0 -900 200 R 50 50 0 0 P
+X 2 2 900 0 200 L 50 50 0 0 P
+X 20 20 900 -900 200 L 50 50 0 0 P
+X 3 3 0 -100 200 R 50 50 0 0 P
+X 4 4 900 -100 200 L 50 50 0 0 P
+X 5 5 0 -200 200 R 50 50 0 0 P
+X 6 6 900 -200 200 L 50 50 0 0 P
+X 7 7 0 -300 200 R 50 50 0 0 P
+X 8 8 900 -300 200 L 50 50 0 0 P
+X 9 9 0 -400 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# 2626-3102_020-000-SamacSys_Parts
+#
+DEF 2626-3102_020-000-SamacSys_Parts J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "2626-3102_020-000-SamacSys_Parts" 650 200 50 H V L CNN
+F2 "26263102020000" 650 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/2626-3102_020-000.pdf" 650 0 50 H I L CNN
+F4 "PCB Terminal Block, 6 mm2, Pin spacing 7.5 mm, 2-pole, Push-in Cage Clamp" 650 -100 50 H I L CNN "Description"
+F5 "24.2" 650 -200 50 H I L CNN "Height"
+F6 "Wago" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "2626-3102/020-000" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "2626-3102/020-000" 650 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/2626-3102020-000/wago-kontakttechnik-gmbh" 650 -600 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -100 200 -100 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# ALD910021SALI-SamacSys_Parts
+#
+DEF ALD910021SALI-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "ALD910021SALI-SamacSys_Parts" 1050 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 100 50 H I L CNN
+F3 "http://www.aldinc.com/pdf/ALD810021.pdf" 1050 0 50 H I L CNN
+F4 "MOSFET Dual SAB MOSFET ARRAY VT=2.10V" 1050 -100 50 H I L CNN "Description"
+F5 "1.75" 1050 -200 50 H I L CNN "Height"
+F6 "Advanced Linear Devices Inc." 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "ALD910021SALI" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "585-ALD910021SALI" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Advanced-Linear-Devices/ALD910021SALI/?qs=8qknGW3gdyEQictW7JYT6A%3D%3D" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+X IC 1 0 0 200 R 50 50 0 0 P
+X GN1 2 0 -100 200 R 50 50 0 0 P
+X DN1 3 0 -200 200 R 50 50 0 0 P
+X SN1 4 0 -300 200 R 50 50 0 0 P
+X SN2,_V- 5 1200 -300 200 L 50 50 0 0 P
+X DN2 6 1200 -200 200 L 50 50 0 0 P
+X GN2 7 1200 -100 200 L 50 50 0 0 P
+X V+ 8 1200 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# AMC1100DUBR-SamacSys_Parts_felles
+#
+DEF AMC1100DUBR-SamacSys_Parts_felles IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "AMC1100DUBR-SamacSys_Parts_felles" 1050 200 50 H V L CNN
+F2 "SOP254P1040X485-8N" 1050 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/amc1100" 1050 0 50 H I L CNN
+F4 "+/-250 mV-Input, Low-Cost Basic Isolated Amplifier for Current Sensing" 1050 -100 50 H I L CNN "Description"
+F5 "4.85" 1050 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "AMC1100DUBR" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "AMC1100DUBR" 1050 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/amc1100dubr/texas-instruments" 1050 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "595-AMC1100DUBR" 1050 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/AMC1100DUBR?qs=2UFnnMkojnWfS8LYivgqyg%3D%3D" 1050 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+X VDD1 1 0 0 200 R 50 50 0 0 P
+X VINP 2 0 -100 200 R 50 50 0 0 P
+X VINN 3 0 -200 200 R 50 50 0 0 P
+X GND1 4 0 -300 200 R 50 50 0 0 P
+X GND2 5 1200 -300 200 L 50 50 0 0 P
+X VOUTN 6 1200 -200 200 L 50 50 0 0 P
+X VOUTP 7 1200 -100 200 L 50 50 0 0 P
+X VDD2 8 1200 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# BCAP0360_P270_S18-SamacSys_Parts
+#
+DEF BCAP0360_P270_S18-SamacSys_Parts C 0 30 Y Y 1 F N
+F0 "C" 1250 500 50 H V L CNN
+F1 "BCAP0360_P270_S18-SamacSys_Parts" 1250 400 50 H V L CNN
+F2 "BCAP0350P270S18" 1250 300 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/BCAP0350 P270 S18.pdf" 1250 200 50 H I L CNN
+F4 "Supercapacitors / Ultracapacitors 2.7V, 360F, snap-in" 1250 100 50 H I L CNN "Description"
+F5 "63" 1250 0 50 H I L CNN "Height"
+F6 "Maxwell / Nesscap" 1250 -100 50 H I L CNN "Manufacturer_Name"
+F7 "BCAP0360 P270 S18" 1250 -200 50 H I L CNN "Manufacturer_Part_Number"
+F8 "723-BCAP0360P270S18" 1250 -300 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Maxwell-Nesscap/BCAP0360-P270-S18?qs=W0yvOO0ixfGj2%2FVlgi3Wlw%3D%3D" 1250 -400 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 300 1200 300 1200 -300 200 -300 200 300 N
+X + 1 700 500 200 D 50 50 0 0 P
+X BLANK_1 2 0 0 200 R 50 50 0 0 P
+X BLANK_2 3 1400 0 200 L 50 50 0 0 P
+X - 4 700 -500 200 U 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# BSZ024N04LS6ATMA1-SamacSys_Parts
+#
+DEF BSZ024N04LS6ATMA1-SamacSys_Parts Q 0 30 Y Y 1 F N
+F0 "Q" 850 300 50 H V L CNN
+F1 "BSZ024N04LS6ATMA1-SamacSys_Parts" 850 200 50 H V L CNN
+F2 "BSZ024N04LS6ATMA1" 850 100 50 H I L CNN
+F3 "https://hu.mouser.com/datasheet/2/196/Infineon-BSZ024N04LS6-DS-v02_00-EN-1840560.pdf" 850 0 50 H I L CNN
+F4 "MOSFET TRENCH <= 40V" 850 -100 50 H I L CNN "Description"
+F5 "1.1" 850 -200 50 H I L CNN "Height"
+F6 "Infineon" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BSZ024N04LS6ATMA1" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "726-BSZ024N04LS6ATMA" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/BSZ024N04LS6ATMA1/?qs=vLWxofP3U2zJ0GOeJDJ9GQ%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "BSZ024N04LS6ATMA1" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/bsz024n04ls6atma1/infineon-technologies-ag" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -500 200 -500 200 100 N
+X S_1 1 0 0 200 R 50 50 0 0 P
+X D_5 10 1000 -400 200 L 50 50 0 0 P
+X S_2 2 0 -100 200 R 50 50 0 0 P
+X S_3 3 0 -200 200 R 50 50 0 0 P
+X G 4 0 -300 200 R 50 50 0 0 P
+X D_1 5 0 -400 200 R 50 50 0 0 P
+X D_2 6 1000 0 200 L 50 50 0 0 P
+X D_3 7 1000 -100 200 L 50 50 0 0 P
+X D_4 8 1000 -200 200 L 50 50 0 0 P
+X S_4 9 1000 -300 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# FSV10100V-SamacSys_Parts
+#
+DEF FSV10100V-SamacSys_Parts D 0 30 Y Y 1 F N
+F0 "D" 750 300 50 H V L CNN
+F1 "FSV10100V-SamacSys_Parts" 750 200 50 H V L CNN
+F2 "FSV20100V" 750 100 50 H I L CNN
+F3 "https://www.onsemi.com/pub/Collateral/FSV10100V-D.PDF" 750 0 50 H I L CNN
+F4 "ON SEMICONDUCTOR - FSV10100V - SCHOTTKY RECT, AEC-Q101, 100V, TO-277" 750 -100 50 H I L CNN "Description"
+F5 "1.2" 750 -200 50 H I L CNN "Height"
+F6 "ON Semiconductor" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "FSV10100V" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "512-FSV10100V" 750 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FSV10100V/?qs=8Nc07tNByyE3el5WRgp%252BmQ%3D%3D" 750 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "FSV10100V" 750 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/fsv10100v/on-semiconductor" 750 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 700 100 700 -200 200 -200 200 100 N
+X A_1 1 900 0 200 L 50 50 0 0 P
+X A_2 2 900 -100 200 L 50 50 0 0 P
+X K 3 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# LM311MX_NOPB-SamacSys_Parts
+#
+DEF LM311MX_NOPB-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 1650 300 50 H V L CNN
+F1 "LM311MX_NOPB-SamacSys_Parts" 1650 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1650 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/lm311-n" 1650 0 50 H I L CNN
+F4 "Precision, high voltage, floating output comparator" 1650 -100 50 H I L CNN "Description"
+F5 "1.75" 1650 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LM311MX/NOPB" 1650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "926-LM311MX/NOPB" 1650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM311MX-NOPB/?qs=X1J7HmVL2ZEqG3VtXtWgVQ%3D%3D" 1650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "LM311MX/NOPB" 1650 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/lm311mxnopb/texas-instruments" 1650 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1600 100 1600 -400 200 -400 200 100 N
+X GROUND 1 0 0 200 R 50 50 0 0 P
+X INPUT_1 2 0 -100 200 R 50 50 0 0 P
+X INPUT_2 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 P
+X BALANCE 5 1800 -300 200 L 50 50 0 0 P
+X BALANCE/_STROBE 6 1800 -200 200 L 50 50 0 0 P
+X OUTPUT 7 1800 -100 200 L 50 50 0 0 P
+X V+ 8 1800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# MMSZ4690T1G-SamacSys_Parts_felles
+#
+DEF MMSZ4690T1G-SamacSys_Parts_felles Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "MMSZ4690T1G-SamacSys_Parts_felles" 400 250 50 H V L CNN
+F2 "SOD3716X135N" 400 150 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/MMSZ4678T1-D.PDF" 400 50 50 H I L CNN
+F4 "ON Semiconductor MMSZ4690T1G Zener Diode, 5.6V 5% 0.5 W SMT 2-Pin SOD-123" 400 -50 50 H I L CNN "Description"
+F5 "1.35" 400 -150 50 H I L CNN "Height"
+F6 "ON Semiconductor" 400 -250 50 H I L CNN "Manufacturer_Name"
+F7 "MMSZ4690T1G" 400 -350 50 H I L CNN "Manufacturer_Part_Number"
+F8 "MMSZ4690T1G" 400 -450 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/mmsz4690t1g/on-semiconductor" 400 -550 50 H I L CNN "Arrow Price/Stock"
+F10 "863-MMSZ4690T1G" 400 -650 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MMSZ4690T1G?qs=P4IOph%252Bbot%252B2OVzEwdVwmg%3D%3D" 400 -750 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SN74AS832BDW-SamacSys_Parts
+#
+DEF SN74AS832BDW-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SN74AS832BDW-SamacSys_Parts" 850 200 50 H V L CNN
+F2 "SOIC127P1030X265-20N" 850 100 50 H I L CNN
+F3 "" 850 0 50 H I L CNN
+F4 "HEX 2-INPUT OR DRIVERS" 850 -100 50 H I L CNN "Description"
+F5 "Texas Instruments" 850 -300 50 H I L CNN "Manufacturer_Name"
+F6 "SN74AS832BDW" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "595-SN74AS832BDW" 850 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74AS832BDW/?qs=eXyjQBh9UFhvXurkKehSVg%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "SN74AS832BDW" 850 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/sn74as832bdw/texas-instruments" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -1000 200 -1000 200 100 N
+X 1A 1 0 0 200 R 50 50 0 0 P
+X GND 10 0 -900 200 R 50 50 0 0 P
+X 4Y 11 1000 -900 200 L 50 50 0 0 P
+X 4A 12 1000 -800 200 L 50 50 0 0 P
+X 4B 13 1000 -700 200 L 50 50 0 0 P
+X 5Y 14 1000 -600 200 L 50 50 0 0 P
+X 5A 15 1000 -500 200 L 50 50 0 0 P
+X 5B 16 1000 -400 200 L 50 50 0 0 P
+X 6Y 17 1000 -300 200 L 50 50 0 0 P
+X 6A 18 1000 -200 200 L 50 50 0 0 P
+X 6B 19 1000 -100 200 L 50 50 0 0 P
+X 1B 2 0 -100 200 R 50 50 0 0 P
+X VCC 20 1000 0 200 L 50 50 0 0 P
+X 1Y 3 0 -200 200 R 50 50 0 0 P
+X 2A 4 0 -300 200 R 50 50 0 0 P
+X 2B 5 0 -400 200 R 50 50 0 0 P
+X 2Y 6 0 -500 200 R 50 50 0 0 P
+X 3A 7 0 -600 200 R 50 50 0 0 P
+X 3B 8 0 -700 200 R 50 50 0 0 P
+X 3Y 9 0 -800 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# TPS82130SILT-SamacSys_Parts
+#
+DEF TPS82130SILT-SamacSys_Parts PS 0 30 Y Y 1 F N
+F0 "PS" 1150 300 50 H V L CNN
+F1 "TPS82130SILT-SamacSys_Parts" 1150 200 50 H V L CNN
+F2 "TPS82130SILT" 1150 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/tps82130" 1150 0 50 H I L CNN
+F4 "3-A 17V Step-down Converter Module with Integrated Inductor" 1150 -100 50 H I L CNN "Description"
+F5 "1" 1150 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1150 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TPS82130SILT" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-TPS82130SILT" 1150 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS82130SILT/?qs=diC8vqfyxkr0HeHAfBUGmQ%3D%3D" 1150 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "TPS82130SILT" 1150 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/tps82130silt/texas-instruments" 1150 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1100 100 1100 -500 200 -500 200 100 N
+X EN 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X VOUT_1 4 0 -300 200 R 50 50 0 0 P
+X VOUT_2 5 0 -400 200 R 50 50 0 0 P
+X FB 6 1300 0 200 L 50 50 0 0 P
+X PG 7 1300 -100 200 L 50 50 0 0 P
+X SS/TR 8 1300 -200 200 L 50 50 0 0 P
+X PAD 9 1300 -300 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

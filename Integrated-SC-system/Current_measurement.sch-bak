@@ -1,0 +1,145 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 27
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Current:ACS758xCB-050U-PFF U?
+U 1 1 60140E46
+P 3850 2850
+AR Path="/60140E46" Ref="U?"  Part="1" 
+AR Path="/6014032F/60140E46" Ref="U1"  Part="1" 
+AR Path="/601838AF/60140E46" Ref="U?"  Part="1" 
+F 0 "U1" H 4294 2941 50  0000 L CNN
+F 1 "ACS758LCB-050B-PFF-T" H 4294 2850 50  0000 L CNN
+F 2 "Sensor_Current:Allegro_CB_PFF" H 4000 3350 50  0000 L CNN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS758-Datasheet.ashx?la=en" H 3850 2850 50  0001 C CNN
+	1    3850 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 2300 0    50   Input ~ 0
+3.3V
+$Comp
+L Device:C C22
+U 1 1 6014193D
+P 5150 3150
+F 0 "C22" H 5265 3196 50  0000 L CNN
+F 1 "0.1u" H 5265 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5188 3000 50  0001 C CNN
+F 3 "~" H 5150 3150 50  0001 C CNN
+F 4 "80-C1206C104F5JACTU" H 5150 3150 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAOIF48nFZgPGA%3D%3D" H 5150 3150 50  0001 C CNN "Mouser Price/Stock"
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 60143C1C
+P 5750 3150
+F 0 "C23" H 5865 3196 50  0000 L CNN
+F 1 "1u" H 5865 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5788 3000 50  0001 C CNN
+F 3 "~" H 5750 3150 50  0001 C CNN
+F 4 "80-C1206C105J3R" H 5750 3150 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C105J3RACTU?qs=ET0bm%252B8TtG75uIhC3K7JNQ%3D%3D" H 5750 3150 50  0001 C CNN "Mouser Price/Stock"
+	1    5750 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2500 5150 2500
+Wire Wire Line
+	5150 2500 5150 3000
+Connection ~ 3850 2500
+Wire Wire Line
+	3850 2500 3850 2550
+Wire Wire Line
+	5750 2850 5750 3000
+Wire Wire Line
+	5750 2850 6150 2850
+Connection ~ 5750 2850
+Wire Wire Line
+	5150 3300 5750 3300
+Wire Wire Line
+	3850 3150 3850 3300
+Wire Wire Line
+	3850 3300 5150 3300
+Connection ~ 5150 3300
+Text HLabel 6150 2850 2    50   Input ~ 0
+Current_Measured
+$Comp
+L power:GND #PWR012
+U 1 1 60144D39
+P 3850 3450
+F 0 "#PWR012" H 3850 3200 50  0001 C CNN
+F 1 "GND" H 3855 3277 50  0000 C CNN
+F 2 "" H 3850 3450 50  0001 C CNN
+F 3 "" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 3300
+Wire Wire Line
+	3450 2750 2850 2750
+Wire Wire Line
+	3450 2950 2850 2950
+Text HLabel 2850 2750 0    50   Input ~ 0
+Current_TBM+
+Text HLabel 2850 2950 0    50   Input ~ 0
+Current_TMB-
+Wire Wire Line
+	3850 3450 3850 3300
+Wire Wire Line
+	3850 2300 3850 2500
+$Comp
+L SamacSys_Parts_vegard:5019 TP?
+U 1 1 603B8416
+P 5750 2700
+AR Path="/601838AF/603B8416" Ref="TP?"  Part="1" 
+AR Path="/601950CF/603B8416" Ref="TP?"  Part="1" 
+AR Path="/6014032F/603B8416" Ref="TP9"  Part="1" 
+F 0 "TP9" V 5796 2788 50  0000 L CNN
+F 1 "5019" V 5887 2788 50  0000 L CNN
+F 2 "SamacSys_Parts_vegard:5019" H 6400 2800 50  0001 L CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 6400 2700 50  0001 L CNN
+F 4 "Circuit Board Hardware - PCB TEST POINT" H 6400 2600 50  0001 L CNN "Description"
+F 5 "Keystone Electronics" H 6400 2400 50  0001 L CNN "Manufacturer_Name"
+F 6 "5019" H 6400 2300 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "534-5019" H 6400 2200 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/5019/?qs=wOxb8XianXjjCAsb90Ilzw%3D%3D" H 6400 2100 50  0001 L CNN "Mouser Price/Stock"
+F 9 "5019" H 6400 2000 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/5019/keystone-electronics" H 6400 1900 50  0001 L CNN "Arrow Price/Stock"
+	1    5750 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 2700 5750 2850
+Wire Wire Line
+	4250 2850 5200 2850
+$Comp
+L Device:R R?
+U 1 1 60504DB6
+P 5350 2850
+AR Path="/601838AF/60504DB6" Ref="R?"  Part="1" 
+AR Path="/6014032F/60504DB6" Ref="R37"  Part="1" 
+F 0 "R37" V 5557 2850 50  0000 C CNN
+F 1 "R" V 5466 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5280 2850 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 5350 2850 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 5350 2850 50  0001 C CNN "Mouser Price/Stock"
+	1    5350 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2850 5750 2850
+$EndSCHEMATC

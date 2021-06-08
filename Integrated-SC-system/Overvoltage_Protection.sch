@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 27
+Sheet 21 27
 Title ""
 Date ""
 Rev ""
@@ -46,7 +46,7 @@ AR Path="/602FC492/601C0164" Ref="R98"  Part="1"
 AR Path="/602FFA39/601C0164" Ref="R105"  Part="1" 
 AR Path="/60302FB0/601C0164" Ref="R119"  Part="1" 
 AR Path="/6030656F/601C0164" Ref="R112"  Part="1" 
-F 0 "R119" V 4643 3400 50  0000 C CNN
+F 0 "R112" V 4643 3400 50  0000 C CNN
 F 1 "10k" V 4734 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4780 3400 50  0001 C CNN
 F 3 "~" H 4850 3400 50  0001 C CNN
@@ -57,38 +57,6 @@ F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1002B10?qs=sGAEpiMZ
 $EndComp
 Text HLabel 9650 3150 3    50   Input ~ 0
 OverVoltageProtection_Alarm
-$Comp
-L Device:R R?
-U 1 1 6026F662
-P 8350 3300
-AR Path="/601950CF/6026F662" Ref="R?"  Part="1" 
-AR Path="/60127F14/6026F662" Ref="R?"  Part="1" 
-AR Path="/60183D66/6026F662" Ref="R?"  Part="1" 
-AR Path="/6018A3E7/6026F662" Ref="R?"  Part="1" 
-AR Path="/601ACA25/6026F662" Ref="R?"  Part="1" 
-AR Path="/601B19F6/6026F662" Ref="R?"  Part="1" 
-AR Path="/601B304B/6026F662" Ref="R?"  Part="1" 
-AR Path="/601DDBD8/6026F662" Ref="R44"  Part="1" 
-AR Path="/602C6F83/6026F662" Ref="R51"  Part="1" 
-AR Path="/602C99B2/6026F662" Ref="R58"  Part="1" 
-AR Path="/602EB817/6026F662" Ref="R65"  Part="1" 
-AR Path="/602EEDF2/6026F662" Ref="R72"  Part="1" 
-AR Path="/602F236D/6026F662" Ref="R79"  Part="1" 
-AR Path="/602F58EC/6026F662" Ref="R86"  Part="1" 
-AR Path="/602F8E6F/6026F662" Ref="R93"  Part="1" 
-AR Path="/602FC492/6026F662" Ref="R100"  Part="1" 
-AR Path="/602FFA39/6026F662" Ref="R107"  Part="1" 
-AR Path="/6030656F/6026F662" Ref="R114"  Part="1" 
-AR Path="/60302FB0/6026F662" Ref="R121"  Part="1" 
-F 0 "R121" H 8420 3346 50  0000 L CNN
-F 1 "400" H 8420 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 8280 3300 50  0001 C CNN
-F 3 "~" H 8350 3300 50  0001 C CNN
-F 4 "660-RN732BTTD4000B25" H 8350 3300 50  0001 C CNN "Mouser Part Number"
-F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN732BTTD4000B25?qs=sGAEpiMZZMvdGkrng054tzPYU%252Blienw%2FxC8II8ptRR0%3D" H 8350 3300 50  0001 C CNN "Mouser Price/Stock"
-	1    8350 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L SamacSys_Parts:BD4827G-TR IC31
 U 1 1 602F85D6
@@ -105,7 +73,7 @@ AR Path="/602F8E6F/602F85D6" Ref="IC25"  Part="1"
 AR Path="/602FC492/602F85D6" Ref="IC27"  Part="1" 
 AR Path="/602FFA39/602F85D6" Ref="IC29"  Part="1" 
 AR Path="/60302FB0/602F85D6" Ref="IC33"  Part="1" 
-F 0 "IC33" H 6750 3915 50  0000 C CNN
+F 0 "IC31" H 6750 3915 50  0000 C CNN
 F 1 "BD4827G-TR" H 6750 3824 50  0000 C CNN
 F 2 "SamacSys_Parts:SOT95P280X125-5N" H 7150 3750 50  0001 L CNN
 F 3 "https://www.rohm.com/datasheet/BD4827G/bd48xxg-e" H 7150 3650 50  0001 L CNN
@@ -140,7 +108,7 @@ AR Path="/602F8E6F/602FCF2D" Ref="C59"  Part="1"
 AR Path="/602FC492/602FCF2D" Ref="C62"  Part="1" 
 AR Path="/602FFA39/602FCF2D" Ref="C65"  Part="1" 
 AR Path="/60302FB0/602FCF2D" Ref="C71"  Part="1" 
-F 0 "C71" H 7815 3696 50  0000 L CNN
+F 0 "C68" H 7815 3696 50  0000 L CNN
 F 1 "0.1u" H 7815 3605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7738 3500 50  0001 C CNN
 F 3 "~" H 7700 3650 50  0001 C CNN
@@ -153,11 +121,6 @@ Wire Wire Line
 	7700 3500 7700 3100
 Wire Wire Line
 	7700 3800 7700 4150
-Wire Wire Line
-	7700 3100 8350 3100
-Wire Wire Line
-	8350 3150 8350 3100
-Connection ~ 8350 3100
 Connection ~ 7700 4150
 Wire Wire Line
 	7700 4150 7700 4200
@@ -181,44 +144,12 @@ AR Path="/602F8E6F/60376BEA" Ref="#PWR028"  Part="1"
 AR Path="/602FC492/60376BEA" Ref="#PWR030"  Part="1" 
 AR Path="/602FFA39/60376BEA" Ref="#PWR032"  Part="1" 
 AR Path="/60302FB0/60376BEA" Ref="#PWR036"  Part="1" 
-F 0 "#PWR036" H 7700 3950 50  0001 C CNN
+F 0 "#PWR034" H 7700 3950 50  0001 C CNN
 F 1 "GNDD" H 7704 4045 50  0000 C CNN
 F 2 "" H 7700 4200 50  0001 C CNN
 F 3 "" H 7700 4200 50  0001 C CNN
 	1    7700 4200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 60369BD3
-P 5950 2950
-AR Path="/601950CF/60369BD3" Ref="R?"  Part="1" 
-AR Path="/60127F14/60369BD3" Ref="R?"  Part="1" 
-AR Path="/60183D66/60369BD3" Ref="R?"  Part="1" 
-AR Path="/6018A3E7/60369BD3" Ref="R?"  Part="1" 
-AR Path="/601ACA25/60369BD3" Ref="R?"  Part="1" 
-AR Path="/601B19F6/60369BD3" Ref="R?"  Part="1" 
-AR Path="/601B304B/60369BD3" Ref="R?"  Part="1" 
-AR Path="/601DDBD8/60369BD3" Ref="R43"  Part="1" 
-AR Path="/602C6F83/60369BD3" Ref="R50"  Part="1" 
-AR Path="/602C99B2/60369BD3" Ref="R57"  Part="1" 
-AR Path="/602EB817/60369BD3" Ref="R64"  Part="1" 
-AR Path="/602EEDF2/60369BD3" Ref="R71"  Part="1" 
-AR Path="/602F236D/60369BD3" Ref="R78"  Part="1" 
-AR Path="/602F58EC/60369BD3" Ref="R85"  Part="1" 
-AR Path="/602F8E6F/60369BD3" Ref="R92"  Part="1" 
-AR Path="/602FC492/60369BD3" Ref="R99"  Part="1" 
-AR Path="/602FFA39/60369BD3" Ref="R106"  Part="1" 
-AR Path="/6030656F/60369BD3" Ref="R113"  Part="1" 
-AR Path="/60302FB0/60369BD3" Ref="R120"  Part="1" 
-F 0 "R120" V 5743 2950 50  0000 C CNN
-F 1 "1k" V 5834 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5880 2950 50  0001 C CNN
-F 3 "~" H 5950 2950 50  0001 C CNN
-F 4 "660-RN73H2TD1001B10" H 5950 2950 50  0001 C CNN "Mouser Part Number"
-F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 5950 2950 50  0001 C CNN "Mouser Price/Stock"
-	1    5950 2950
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5700 2950 5800 2950
@@ -240,7 +171,7 @@ AR Path="/602FC492/603B50D5" Ref="TP18"  Part="1"
 AR Path="/602FFA39/603B50D5" Ref="TP19"  Part="1" 
 AR Path="/6030656F/603B50D5" Ref="TP20"  Part="1" 
 AR Path="/60302FB0/603B50D5" Ref="TP21"  Part="1" 
-F 0 "TP21" V 9246 3038 50  0000 L CNN
+F 0 "TP20" V 9246 3038 50  0000 L CNN
 F 1 "5019" V 9337 3038 50  0000 L CNN
 F 2 "SamacSys_Parts_vegard:5019" H 9850 3050 50  0001 L CNN
 F 3 "http://www.keyelco.com/product-pdf.cfm?p=1357" H 9850 2950 50  0001 L CNN
@@ -260,8 +191,6 @@ Connection ~ 9200 3100
 Wire Wire Line
 	6100 3100 7700 3100
 Wire Wire Line
-	8350 3100 9200 3100
-Wire Wire Line
 	6100 3850 6200 3850
 $Comp
 L power:GNDD #PWR033
@@ -279,7 +208,7 @@ AR Path="/602F8E6F/604400A9" Ref="#PWR027"  Part="1"
 AR Path="/602FC492/604400A9" Ref="#PWR029"  Part="1" 
 AR Path="/602FFA39/604400A9" Ref="#PWR031"  Part="1" 
 AR Path="/60302FB0/604400A9" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 4300 4000 50  0001 C CNN
+F 0 "#PWR033" H 4300 4000 50  0001 C CNN
 F 1 "GNDD" H 4304 4095 50  0000 C CNN
 F 2 "" H 4300 4250 50  0001 C CNN
 F 3 "" H 4300 4250 50  0001 C CNN
@@ -329,7 +258,7 @@ AR Path="/602FC492/6066901A" Ref="R94"  Part="1"
 AR Path="/602FFA39/6066901A" Ref="R101"  Part="1" 
 AR Path="/60302FB0/6066901A" Ref="R115"  Part="1" 
 AR Path="/6030656F/6066901A" Ref="R108"  Part="1" 
-F 0 "R115" V 2493 3300 50  0000 C CNN
+F 0 "R108" V 2493 3300 50  0000 C CNN
 F 1 "10k" V 2584 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2630 3300 50  0001 C CNN
 F 3 "~" H 2700 3300 50  0001 C CNN
@@ -373,7 +302,7 @@ AR Path="/602FC492/6066BECF" Ref="R97"  Part="1"
 AR Path="/602FFA39/6066BECF" Ref="R104"  Part="1" 
 AR Path="/60302FB0/6066BECF" Ref="R118"  Part="1" 
 AR Path="/6030656F/6066BECF" Ref="R111"  Part="1" 
-F 0 "R118" V 4093 4000 50  0000 C CNN
+F 0 "R111" V 4093 4000 50  0000 C CNN
 F 1 "10k" V 4184 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4230 4000 50  0001 C CNN
 F 3 "~" H 4300 4000 50  0001 C CNN
@@ -419,7 +348,7 @@ AR Path="/602FC492/6066FEB7" Ref="R96"  Part="1"
 AR Path="/602FFA39/6066FEB7" Ref="R103"  Part="1" 
 AR Path="/60302FB0/6066FEB7" Ref="R117"  Part="1" 
 AR Path="/6030656F/6066FEB7" Ref="R110"  Part="1" 
-F 0 "R117" V 3493 2800 50  0000 C CNN
+F 0 "R110" V 3493 2800 50  0000 C CNN
 F 1 "10k" V 3584 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3630 2800 50  0001 C CNN
 F 3 "~" H 3700 2800 50  0001 C CNN
@@ -472,7 +401,7 @@ AR Path="/602FC492/6066850F" Ref="R95"  Part="1"
 AR Path="/602FFA39/6066850F" Ref="R102"  Part="1" 
 AR Path="/60302FB0/6066850F" Ref="R116"  Part="1" 
 AR Path="/6030656F/6066850F" Ref="R109"  Part="1" 
-F 0 "R116" V 2493 3800 50  0000 C CNN
+F 0 "R109" V 2493 3800 50  0000 C CNN
 F 1 "10k" V 2584 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2630 3800 50  0001 C CNN
 F 3 "~" H 2700 3800 50  0001 C CNN
@@ -499,7 +428,7 @@ AR Path="/602F8E6F/60483400" Ref="C57"  Part="1"
 AR Path="/602FC492/60483400" Ref="C60"  Part="1" 
 AR Path="/602FFA39/60483400" Ref="C63"  Part="1" 
 AR Path="/60302FB0/60483400" Ref="C69"  Part="1" 
-F 0 "C69" H 4765 3846 50  0000 L CNN
+F 0 "C66" H 4765 3846 50  0000 L CNN
 F 1 "0.1u" H 4765 3755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 4688 3650 50  0001 C CNN
 F 3 "~" H 4650 3800 50  0001 C CNN
@@ -510,8 +439,6 @@ F 5 "https://no.mouser.com/ProductDetail/KEMET/C1206C104F5JAC7800?qs=gZXFycFWdAO
 $EndComp
 Wire Wire Line
 	2850 3800 3050 3800
-Text Notes 8400 4250 0    50   ~ 0
-The diode draws 2mA at \n1.9V. (250ohm). \nResistor of 400ohm \nwill limit the voltage.
 Wire Notes Line
 	5000 4550 1650 4550
 Wire Notes Line
@@ -550,7 +477,7 @@ AR Path="/602F8E6F/604C7FBF" Ref="C58"  Part="1"
 AR Path="/602FC492/604C7FBF" Ref="C61"  Part="1" 
 AR Path="/602FFA39/604C7FBF" Ref="C64"  Part="1" 
 AR Path="/60302FB0/604C7FBF" Ref="C70"  Part="1" 
-F 0 "C70" H 5915 3996 50  0000 L CNN
+F 0 "C67" H 5915 3996 50  0000 L CNN
 F 1 "0.1u" H 5915 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 5838 3800 50  0001 C CNN
 F 3 "~" H 5800 3950 50  0001 C CNN
@@ -584,7 +511,7 @@ AR Path="/602FC492/604E7972" Ref="IC26"  Part="1"
 AR Path="/602FFA39/604E7972" Ref="IC28"  Part="1" 
 AR Path="/6030656F/604E7972" Ref="IC30"  Part="1" 
 AR Path="/60302FB0/604E7972" Ref="IC32"  Part="1" 
-F 0 "IC32" H 3700 3465 50  0000 C CNN
+F 0 "IC30" H 3700 3465 50  0000 C CNN
 F 1 "OPA197IDR" H 3700 3374 50  0000 C CNN
 F 2 "SamacSys_Parts:SOIC127P600X175-8N" H 4100 3300 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/opa197" H 4100 3200 50  0001 L CNN
@@ -640,39 +567,6 @@ Wire Wire Line
 Connection ~ 4350 3400
 Wire Wire Line
 	4350 3400 4700 3400
-$Comp
-L SamacSys_Parts:APTD3216LSYCK LED12
-U 1 1 60A25F30
-P 8350 4050
-AR Path="/6030656F/60A25F30" Ref="LED12"  Part="1" 
-AR Path="/602F58EC/60A25F30" Ref="LED8"  Part="1" 
-AR Path="/602FFA39/60A25F30" Ref="LED11"  Part="1" 
-AR Path="/601DDBD8/60A25F30" Ref="LED2"  Part="1" 
-AR Path="/602C6F83/60A25F30" Ref="LED3"  Part="1" 
-AR Path="/602C99B2/60A25F30" Ref="LED4"  Part="1" 
-AR Path="/602EB817/60A25F30" Ref="LED5"  Part="1" 
-AR Path="/602EEDF2/60A25F30" Ref="LED6"  Part="1" 
-AR Path="/602F236D/60A25F30" Ref="LED7"  Part="1" 
-AR Path="/602F8E6F/60A25F30" Ref="LED9"  Part="1" 
-AR Path="/602FC492/60A25F30" Ref="LED10"  Part="1" 
-AR Path="/60302FB0/60A25F30" Ref="LED13"  Part="1" 
-F 0 "LED13" V 8696 3920 50  0000 R CNN
-F 1 "APTD3216LSYCK" V 8605 3920 50  0000 R CNN
-F 2 "SamacSys_Parts:LEDC3216X200N" H 8850 4200 50  0001 L BNN
-F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD3216LSYCK.pdf" H 8850 4100 50  0001 L BNN
-F 4 "Standard LEDs - SMD 1206 Dome Lens LED Yellow- 590nm" H 8850 4000 50  0001 L BNN "Description"
-F 5 "2" H 8850 3900 50  0001 L BNN "Height"
-F 6 "Kingbright" H 8850 3800 50  0001 L BNN "Manufacturer_Name"
-F 7 "APTD3216LSYCK" H 8850 3700 50  0001 L BNN "Manufacturer_Part_Number"
-F 8 "604-APTD3216LSYCK" H 8850 3600 50  0001 L BNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD3216LSYCK/?qs=AQlKX63v8RvoX%252BazwCMI3g%3D%3D" H 8850 3500 50  0001 L BNN "Mouser Price/Stock"
-F 10 "APTD3216LSYCK" H 8850 3400 50  0001 L BNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/aptd3216lsyck/kingbright" H 8850 3300 50  0001 L BNN "Arrow Price/Stock"
-	1    8350 4050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8350 4150 8350 4050
 Wire Wire Line
 	5550 3400 5550 3750
 Wire Wire Line
@@ -690,8 +584,116 @@ Connection ~ 6100 3100
 Wire Wire Line
 	6100 3100 6100 3650
 Connection ~ 7700 3100
-Wire Wire Line
-	7700 4150 8350 4150
 Text Notes 7000 6700 0    50   ~ 0
 Rev 1.1: Pull-up resistor changed to 47kohm. \nRemoved schotky diode. \nRemoved diode circuit.
+$Comp
+L Device:R R?
+U 1 1 60369BD3
+P 5950 2950
+AR Path="/601950CF/60369BD3" Ref="R?"  Part="1" 
+AR Path="/60127F14/60369BD3" Ref="R?"  Part="1" 
+AR Path="/60183D66/60369BD3" Ref="R?"  Part="1" 
+AR Path="/6018A3E7/60369BD3" Ref="R?"  Part="1" 
+AR Path="/601ACA25/60369BD3" Ref="R?"  Part="1" 
+AR Path="/601B19F6/60369BD3" Ref="R?"  Part="1" 
+AR Path="/601B304B/60369BD3" Ref="R?"  Part="1" 
+AR Path="/601DDBD8/60369BD3" Ref="R43"  Part="1" 
+AR Path="/602C6F83/60369BD3" Ref="R50"  Part="1" 
+AR Path="/602C99B2/60369BD3" Ref="R57"  Part="1" 
+AR Path="/602EB817/60369BD3" Ref="R64"  Part="1" 
+AR Path="/602EEDF2/60369BD3" Ref="R71"  Part="1" 
+AR Path="/602F236D/60369BD3" Ref="R78"  Part="1" 
+AR Path="/602F58EC/60369BD3" Ref="R85"  Part="1" 
+AR Path="/602F8E6F/60369BD3" Ref="R92"  Part="1" 
+AR Path="/602FC492/60369BD3" Ref="R99"  Part="1" 
+AR Path="/602FFA39/60369BD3" Ref="R106"  Part="1" 
+AR Path="/6030656F/60369BD3" Ref="R113"  Part="1" 
+AR Path="/60302FB0/60369BD3" Ref="R120"  Part="1" 
+F 0 "R113" V 5743 2950 50  0000 C CNN
+F 1 "1k" V 5834 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5880 2950 50  0001 C CNN
+F 3 "~" H 5950 2950 50  0001 C CNN
+F 4 "660-RN73H2TD1001B10" H 5950 2950 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN73H2BTTD1001B10?qs=sGAEpiMZZMvdGkrng054t9OHizemP%252BWODF53bAC1Tss%3D" H 5950 2950 50  0001 C CNN "Mouser Price/Stock"
+	1    5950 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4150 8350 4150
+Wire Wire Line
+	8350 3100 9200 3100
+Wire Wire Line
+	7700 3100 8350 3100
+Connection ~ 8350 3100
+Wire Wire Line
+	8350 3150 8350 3100
+Wire Wire Line
+	8350 4150 8350 4050
+$Comp
+L SamacSys_Parts:APTD3216LSYCK LED12
+U 1 1 60A25F30
+P 8350 4050
+AR Path="/6030656F/60A25F30" Ref="LED12"  Part="1" 
+AR Path="/602F58EC/60A25F30" Ref="LED8"  Part="1" 
+AR Path="/602FFA39/60A25F30" Ref="LED11"  Part="1" 
+AR Path="/601DDBD8/60A25F30" Ref="LED2"  Part="1" 
+AR Path="/602C6F83/60A25F30" Ref="LED3"  Part="1" 
+AR Path="/602C99B2/60A25F30" Ref="LED4"  Part="1" 
+AR Path="/602EB817/60A25F30" Ref="LED5"  Part="1" 
+AR Path="/602EEDF2/60A25F30" Ref="LED6"  Part="1" 
+AR Path="/602F236D/60A25F30" Ref="LED7"  Part="1" 
+AR Path="/602F8E6F/60A25F30" Ref="LED9"  Part="1" 
+AR Path="/602FC492/60A25F30" Ref="LED10"  Part="1" 
+AR Path="/60302FB0/60A25F30" Ref="LED13"  Part="1" 
+F 0 "LED12" V 8696 3920 50  0000 R CNN
+F 1 "APTD3216LSYCK" V 8605 3920 50  0000 R CNN
+F 2 "SamacSys_Parts:LEDC3216X200N" H 8850 4200 50  0001 L BNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/APTD3216LSYCK.pdf" H 8850 4100 50  0001 L BNN
+F 4 "Standard LEDs - SMD 1206 Dome Lens LED Yellow- 590nm" H 8850 4000 50  0001 L BNN "Description"
+F 5 "2" H 8850 3900 50  0001 L BNN "Height"
+F 6 "Kingbright" H 8850 3800 50  0001 L BNN "Manufacturer_Name"
+F 7 "APTD3216LSYCK" H 8850 3700 50  0001 L BNN "Manufacturer_Part_Number"
+F 8 "604-APTD3216LSYCK" H 8850 3600 50  0001 L BNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Kingbright/APTD3216LSYCK/?qs=AQlKX63v8RvoX%252BazwCMI3g%3D%3D" H 8850 3500 50  0001 L BNN "Mouser Price/Stock"
+F 10 "APTD3216LSYCK" H 8850 3400 50  0001 L BNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/aptd3216lsyck/kingbright" H 8850 3300 50  0001 L BNN "Arrow Price/Stock"
+	1    8350 4050
+	0    -1   -1   0   
+$EndComp
+Text Notes 8400 4250 0    50   ~ 0
+The diode draws 2mA at \n1.9V. (250ohm). \nResistor of 400ohm \nwill limit the voltage.
+$Comp
+L Device:R R?
+U 1 1 6026F662
+P 8350 3300
+AR Path="/601950CF/6026F662" Ref="R?"  Part="1" 
+AR Path="/60127F14/6026F662" Ref="R?"  Part="1" 
+AR Path="/60183D66/6026F662" Ref="R?"  Part="1" 
+AR Path="/6018A3E7/6026F662" Ref="R?"  Part="1" 
+AR Path="/601ACA25/6026F662" Ref="R?"  Part="1" 
+AR Path="/601B19F6/6026F662" Ref="R?"  Part="1" 
+AR Path="/601B304B/6026F662" Ref="R?"  Part="1" 
+AR Path="/601DDBD8/6026F662" Ref="R44"  Part="1" 
+AR Path="/602C6F83/6026F662" Ref="R51"  Part="1" 
+AR Path="/602C99B2/6026F662" Ref="R58"  Part="1" 
+AR Path="/602EB817/6026F662" Ref="R65"  Part="1" 
+AR Path="/602EEDF2/6026F662" Ref="R72"  Part="1" 
+AR Path="/602F236D/6026F662" Ref="R79"  Part="1" 
+AR Path="/602F58EC/6026F662" Ref="R86"  Part="1" 
+AR Path="/602F8E6F/6026F662" Ref="R93"  Part="1" 
+AR Path="/602FC492/6026F662" Ref="R100"  Part="1" 
+AR Path="/602FFA39/6026F662" Ref="R107"  Part="1" 
+AR Path="/6030656F/6026F662" Ref="R114"  Part="1" 
+AR Path="/60302FB0/6026F662" Ref="R121"  Part="1" 
+F 0 "R114" H 8420 3346 50  0000 L CNN
+F 1 "400" H 8420 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 8280 3300 50  0001 C CNN
+F 3 "~" H 8350 3300 50  0001 C CNN
+F 4 "660-RN732BTTD4000B25" H 8350 3300 50  0001 C CNN "Mouser Part Number"
+F 5 "https://no.mouser.com/ProductDetail/KOA-Speer/RN732BTTD4000B25?qs=sGAEpiMZZMvdGkrng054tzPYU%252Blienw%2FxC8II8ptRR0%3D" H 8350 3300 50  0001 C CNN "Mouser Price/Stock"
+	1    8350 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 2800 0    50   ~ 0
+47kOhm
 $EndSCHEMATC
